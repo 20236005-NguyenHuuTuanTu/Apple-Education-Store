@@ -6,5 +6,9 @@
   },
   "scripts": {
     "prepare": "husky"
+  },
+  "dependencies": {
+    "@growthbook/growthbook": "^1.6.5",
+    "@growthbook/growthbook-react": "^1.6.5"
   }
 }
