@@ -1,0 +1,90 @@
+.product-card {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    /* common font settings for nested elements */
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+/* hover transform is common for all cards */
+.product-card:hover {
+    transform: scale(1.015);
+}
+
+/* image wrapper layout stays the same */
+.img-wrapper {
+    width: 100%;
+    height: 100%;                  
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+/* content positioning is shared */
+.product-content {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+}
+
+.product-content svg {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* headings, desc, price share reset rules and sizing; color set via theme */
+.product-heading, .product-desc, .product-price {
+    margin: 0;
+    padding: 0;
+}
+
+.product-heading {
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: .007em;
+    line-height: 1.1428571429;
+}
+
+.product-desc {
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -.022em;
+    line-height: 1.2353641176;
+    padding-top: 10px;
+    padding-bottom: 6px;
+}
+
+.product-price {
+    font-size: 14px;
+    line-height: 1.2857742857;
+    font-weight: 400;
+    letter-spacing: -.016em;
+}
+
+.product-warning {
+    color: #b64400;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: -.01em;
+    line-height: 1.3333733333;
+}
+
+/* Theme-specific color overrides */
+.product-card.theme-dark .product-heading,
+.product-card.theme-dark .product-desc,
+.product-card.theme-dark .product-price {
+    color: #fff;
+}
+
+.product-card.theme-light .product-heading,
+.product-card.theme-light .product-desc,
+.product-card.theme-light .product-price {
+    color: #000;
+}

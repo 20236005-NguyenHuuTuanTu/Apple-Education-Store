@@ -8,6 +8,8 @@
     <script type="module" src="growthbook.js"></script>
     <script src="growthbook.js" defer></script>
     <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/card-layout.css">
+    <link rel="stylesheet" href="./assets/css/product-card.css">
     <script src="./assets/js/index.js"></script>
     <link rel="stylesheet" href="./assets/css/HeaderStyle.css">
     <link rel="stylesheet" href="./assets/css/hero-banner.css">
@@ -97,7 +99,7 @@
         </div>
     </header>
     <!-- End Header -->
-
+`
     <!-- Hero Banner -->
     <div class="hero-banner">
         <div class="upper-banner">
@@ -165,6 +167,124 @@
     <!-- End Hero Banner -->
 
     <!-- Product section & Promo Section -->
+    <!-- Card Section -->
+    <div class="card-section">
+        <h2 class="card-section-heading">
+            Trợ Giá Cho Giáo Dục. 
+            <span class="card-section-subheading">Nhận giá đặc biệt khi mua mua Mac, iPad và nhiều sản phẩm khác.</span>
+        </h2>   
+        <!-- Product items go here -->
+        <div class="slider-container">
+            <button class="slider-btn prev" aria-label="Previous slide">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                        <path d="M21.559,12.062 L15.618,17.984 L21.5221,23.944 C22.105,24.533 22.1021,25.482 21.5131,26.065 C21.2211,26.355 20.8391,26.4999987 20.4571,26.4999987 C20.0711,26.4999987 19.6851,26.352 19.3921,26.056 L12.4351,19.034 C11.8531,18.446 11.8551,17.4999987 12.4411,16.916 L19.4411,9.938 C20.0261,9.353 20.9781,9.354 21.5621,9.941 C22.1471,10.528 22.1451,11.478 21.5591,12.062 L21.559,12.062 Z"></path>
+                    </svg>
+                </span>
+            </button>
+            <div class="card-wrapper">
+                <div class="card product-card theme-dark">
+                    <div class="img-wrapper">
+                        <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-macbook-pro-202510?wid=800&amp;hei=1000&amp;fmt=p-jpg&amp;qlt=95&amp;.v=MjhMcWJ2MGZwbXEwdnBkcUN6ZnhyMm9DK3hwOFVzTGV2T3V6VkdGOUQ2UnFTRjNxbmh1UnU2R29ibGdpZUFXc0prY3crUWRsN1dqVjRnMHR5S1hVbklPS25VR1ArQVI4S2pHc0tMcjlBVzFiMGI1QWpFYmQ4WmNVN2cwdWd2b3E" alt="MacBook Pro">
+                    </div>
+                    <div class="product-content">
+                        <div class="header-row">
+                            <div class="text-content">
+                                <h3 class="product-heading">MacBook Pro 14 inch</h3>
+                                <p class="product-desc">Nay với M5, M5 Pro và M5 Max.</p>
+                            </div>
+                            <svg role="img" aria-labelledby="edu-savings-svgtxt" height="35" viewBox="0 0 35 35" width="35" xmlns="http://www.w3.org/2000/svg">
+                                <g fill="none" fill-rule="evenodd"><path d="m0 0h35v35h-35z"></path><path d="m9 18.7728v5.3914c-.61143092-.6239047-.96802746-1.4535266-1-2.3265v-3.5207l.9272.4224zm11.6159 2.4615c-.9317176.4767769-1.958535.7384363-3.0048.7657l-.0867-.0016-.1354.0016c-1.0447951-.027019-2.0702278-.2880245-3.0008-.7638l-3.5775-1.6346-.8107-.3702v5.8144c2.2405033 1.4045651 4.8550652 2.0948159 7.4969 1.9792h.0063c5.8668 0 9.4968-2.5937 9.4968-5.1873v-3.5218l-.9352.4227zm9.5225-8.0083-9.9422-4.5533c-.8190429-.41572779-1.7197947-.64543162-2.6379-.6727h-.0583-.0582c-.9181305.02731605-1.8189046.25701687-2.638.6727l-9.952 4.5533c-.51552366.213068-.85177474.7158805-.85177474 1.2737s.33625108 1.060632.85177474 1.2737l3.1482 1.4444.1089.05 1.0375.4726 6.3436-3.0725c-.0703139-.1033163-.1101635-.2243204-.115-.3492 0-.4745.5565-.8784 1.3413-1.0437.5168439-.1084009 1.0505561-.1084009 1.5674 0 .7848.1653 1.3413.5692 1.3413 1.0437 0 .6213-.9514 1.125-2.125 1.125-.3450911.0006688-.6885257-.0477151-1.02-.1437l-6.1544 2.9809.9006.4112 3.5778 1.6348c.8004678.4149094 1.6838314.6449257 2.585.6731.037 0 .074-.0004333.111-.0013.0371.0009.074.0013.1111.0013.90122-.0282079 1.7846232-.2582939 2.5851-.6733l5.4522-2.4973 1.2427-.5616.1089-.05 3.1384-1.4443c.5204134-.2086963.8615206-.7130002.8615206-1.2737s-.3411072-1.0650037-.8615206-1.2737zm-21.1384 13.424c-.49597634.057359-.87133619.4755314-.875.9748v3.25c0 .5522847.44771525 1 1 1h.75c.5522847 0 1-.4477153 1-1v-3.25c-.0036638-.4992686-.3790237-.917441-.875-.9748v-1.6042c-.36454924-.2564393-.69988581-.552072-1-.8816z" fill="#08827c" fill-rule="nonzero"></path></g>
+                            </svg>
+                        </div>
+                        <p class="product-price">Từ 44.449.000đ với chính sách trợ giá cho giáo dục</p>
+                    </div>
+                </div>
+
+                <div class="card product-card theme-light">
+                    <div class="img-wrapper">
+                        <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-macbook-air-202603?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=MjhMcWJ2MGZwbXEwdnBkcUN6ZnhyNW1zWVJKOElDbC9ldmpiZzRNOFRtcHFTRjNxbmh1UnU2R29ibGdpZUFXc0prY3crUWRsN1dqVjRnMHR5S1hVbkFiVXYydkZ1ZDA4Q3h4c0lESFBqQXpwQzBVSW45YWhONjVMRUhBaEpwU3g" alt="MacBook Air">
+                    </div>
+                    <div class="product-content">
+                        <div class="header-row">
+                            <div class="text-content">
+                                <h3 class="product-heading">MacBook Air</h3>
+                                <p class="product-desc">Nay siêu mạnh mẽ với M5.</p>
+                            </div>
+                            <svg role="img" aria-labelledby="edu-savings-svgtxt" height="35" viewBox="0 0 35 35" width="35" xmlns="http://www.w3.org/2000/svg">
+                                <g fill="none" fill-rule="evenodd"><path d="m0 0h35v35h-35z"></path><path d="m9 18.7728v5.3914c-.61143092-.6239047-.96802746-1.4535266-1-2.3265v-3.5207l.9272.4224zm11.6159 2.4615c-.9317176.4767769-1.958535.7384363-3.0048.7657l-.0867-.0016-.1354.0016c-1.0447951-.027019-2.0702278-.2880245-3.0008-.7638l-3.5775-1.6346-.8107-.3702v5.8144c2.2405033 1.4045651 4.8550652 2.0948159 7.4969 1.9792h.0063c5.8668 0 9.4968-2.5937 9.4968-5.1873v-3.5218l-.9352.4227zm9.5225-8.0083-9.9422-4.5533c-.8190429-.41572779-1.7197947-.64543162-2.6379-.6727h-.0583-.0582c-.9181305.02731605-1.8189046.25701687-2.638.6727l-9.952 4.5533c-.51552366.213068-.85177474.7158805-.85177474 1.2737s.33625108 1.060632.85177474 1.2737l3.1482 1.4444.1089.05 1.0375.4726 6.3436-3.0725c-.0703139-.1033163-.1101635-.2243204-.115-.3492 0-.4745.5565-.8784 1.3413-1.0437.5168439-.1084009 1.0505561-.1084009 1.5674 0 .7848.1653 1.3413.5692 1.3413 1.0437 0 .6213-.9514 1.125-2.125 1.125-.3450911.0006688-.6885257-.0477151-1.02-.1437l-6.1544 2.9809.9006.4112 3.5778 1.6348c.8004678.4149094 1.6838314.6449257 2.585.6731.037 0 .074-.0004333.111-.0013.0371.0009.074.0013.1111.0013.90122-.0282079 1.7846232-.2582939 2.5851-.6733l5.4522-2.4973 1.2427-.5616.1089-.05 3.1384-1.4443c.5204134-.2086963.8615206-.7130002.8615206-1.2737s-.3411072-1.0650037-.8615206-1.2737zm-21.1384 13.424c-.49597634.057359-.87133619.4755314-.875.9748v3.25c0 .5522847.44771525 1 1 1h.75c.5522847 0 1-.4477153 1-1v-3.25c-.0036638-.4992686-.3790237-.917441-.875-.9748v-1.6042c-.36454924-.2564393-.69988581-.552072-1-.8816z" fill="#08827c" fill-rule="nonzero"></path></g>
+                            </svg>
+                        </div>
+                        <p class="product-price">Từ 27.269.000đ với chính sách trợ giá cho giáo dục</p>
+                    </div>
+                </div>
+
+                <div class="card product-card theme-light">
+                    <div class="img-wrapper">
+                        <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-ipad-air-202603?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=UzBXQnlhUWdraTNvNU1Kb3pEQlpXR2xoVkNFSUF6ZStKWSsvQnNnYVZ3WDZXYXJlRUd1cTBYTnRnbTNlazIvMzRHeXB5TnVsU3R6Qjd0Y2JzbURyWExQUXZJbjlBVFhtY0wrQTJtOWpqY0orYWpGdS9XeFgvbS9ITnNYOEhYaG4" alt="iPad Air">
+                    </div>
+                    <div class="product-content">
+                        <div class="header-row">
+                            <div class="text-content">
+                                <h3 class="product-heading">iPad Air</h3>
+                                <p class="product-desc">Nay siêu mạnh mẽ với M4.</p>
+                            </div>
+                            <svg role="img" aria-labelledby="edu-savings-svgtxt" height="35" viewBox="0 0 35 35" width="35" xmlns="http://www.w3.org/2000/svg">
+                                <g fill="none" fill-rule="evenodd"><path d="m0 0h35v35h-35z"></path><path d="m9 18.7728v5.3914c-.61143092-.6239047-.96802746-1.4535266-1-2.3265v-3.5207l.9272.4224zm11.6159 2.4615c-.9317176.4767769-1.958535.7384363-3.0048.7657l-.0867-.0016-.1354.0016c-1.0447951-.027019-2.0702278-.2880245-3.0008-.7638l-3.5775-1.6346-.8107-.3702v5.8144c2.2405033 1.4045651 4.8550652 2.0948159 7.4969 1.9792h.0063c5.8668 0 9.4968-2.5937 9.4968-5.1873v-3.5218l-.9352.4227zm9.5225-8.0083-9.9422-4.5533c-.8190429-.41572779-1.7197947-.64543162-2.6379-.6727h-.0583-.0582c-.9181305.02731605-1.8189046.25701687-2.638.6727l-9.952 4.5533c-.51552366.213068-.85177474.7158805-.85177474 1.2737s.33625108 1.060632.85177474 1.2737l3.1482 1.4444.1089.05 1.0375.4726 6.3436-3.0725c-.0703139-.1033163-.1101635-.2243204-.115-.3492 0-.4745.5565-.8784 1.3413-1.0437.5168439-.1084009 1.0505561-.1084009 1.5674 0 .7848.1653 1.3413.5692 1.3413 1.0437 0 .6213-.9514 1.125-2.125 1.125-.3450911.0006688-.6885257-.0477151-1.02-.1437l-6.1544 2.9809.9006.4112 3.5778 1.6348c.8004678.4149094 1.6838314.6449257 2.585.6731.037 0 .074-.0004333.111-.0013.0371.0009.074.0013.1111.0013.90122-.0282079 1.7846232-.2582939 2.5851-.6733l5.4522-2.4973 1.2427-.5616.1089-.05 3.1384-1.4443c.5204134-.2086963.8615206-.7130002.8615206-1.2737s-.3411072-1.0650037-.8615206-1.2737zm-21.1384 13.424c-.49597634.057359-.87133619.4755314-.875.9748v3.25c0 .5522847.44771525 1 1 1h.75c.5522847 0 1-.4477153 1-1v-3.25c-.0036638-.4992686-.3790237-.917441-.875-.9748v-1.6042c-.36454924-.2564393-.69988581-.552072-1-.8816z" fill="#08827c" fill-rule="nonzero"></path></g>
+                            </svg>
+                        </div>
+                        <p class="product-price">Từ 15.289.000đ với chính sách trợ giá cho giáo dục</p>
+                    </div>
+                </div>
+
+                <div class="card product-card theme-light">
+                    <div class="img-wrapper">
+                        <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-studio-display-202603?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=Q0w5cGFlQVB3RjJ6Qm5FUFg3QVY2dzd1WDV1dFdUWE5TRlZiRFkzMEl1Q2ZhWHBGM25yb1UxWWtqa0x3bmxySGNva0xZQWFEV2ljOWRGNWZJRk4vWHJtay85UHVpNllicnBnUWltWk1qamVLYkx0OENwMkRQdkJNSjRXNHBjOTE" alt="Studio Display">
+                    </div>
+                    <div class="product-content">
+                        <div class="header-row">
+                            <div class="text-content">
+                                <h3 class="product-warning">ĐẶT TRƯỚC TỪ NGÀY 4 THÁNG 3</h3>
+                                <h3 class="product-heading">Studio Display</h3>
+                                <p class="product-desc">Tuyệt diệu từ cái nhìn đầu tiên.</p>
+                            </div>
+                            <svg role="img" aria-labelledby="edu-savings-svgtxt" height="35" viewBox="0 0 35 35" width="35" xmlns="http://www.w3.org/2000/svg">
+                                <g fill="none" fill-rule="evenodd"><path d="m0 0h35v35h-35z"></path><path d="m9 18.7728v5.3914c-.61143092-.6239047-.96802746-1.4535266-1-2.3265v-3.5207l.9272.4224zm11.6159 2.4615c-.9317176.4767769-1.958535.7384363-3.0048.7657l-.0867-.0016-.1354.0016c-1.0447951-.027019-2.0702278-.2880245-3.0008-.7638l-3.5775-1.6346-.8107-.3702v5.8144c2.2405033 1.4045651 4.8550652 2.0948159 7.4969 1.9792h.0063c5.8668 0 9.4968-2.5937 9.4968-5.1873v-3.5218l-.9352.4227zm9.5225-8.0083-9.9422-4.5533c-.8190429-.41572779-1.7197947-.64543162-2.6379-.6727h-.0583-.0582c-.9181305.02731605-1.8189046.25701687-2.638.6727l-9.952 4.5533c-.51552366.213068-.85177474.7158805-.85177474 1.2737s.33625108 1.060632.85177474 1.2737l3.1482 1.4444.1089.05 1.0375.4726 6.3436-3.0725c-.0703139-.1033163-.1101635-.2243204-.115-.3492 0-.4745.5565-.8784 1.3413-1.0437.5168439-.1084009 1.0505561-.1084009 1.5674 0 .7848.1653 1.3413.5692 1.3413 1.0437 0 .6213-.9514 1.125-2.125 1.125-.3450911.0006688-.6885257-.0477151-1.02-.1437l-6.1544 2.9809.9006.4112 3.5778 1.6348c.8004678.4149094 1.6838314.6449257 2.585.6731.037 0 .074-.0004333.111-.0013.0371.0009.074.0013.1111.0013.90122-.0282079 1.7846232-.2582939 2.5851-.6733l5.4522-2.4973 1.2427-.5616.1089-.05 3.1384-1.4443c.5204134-.2086963.8615206-.7130002.8615206-1.2737s-.3411072-1.0650037-.8615206-1.2737zm-21.1384 13.424c-.49597634.057359-.87133619.4755314-.875.9748v3.25c0 .5522847.44771525 1 1 1h.75c.5522847 0 1-.4477153 1-1v-3.25c-.0036638-.4992686-.3790237-.917441-.875-.9748v-1.6042c-.36454924-.2564393-.69988581-.552072-1-.8816z" fill="#08827c" fill-rule="nonzero"></path></g>
+                            </svg>
+                        </div>
+                        <p class="product-price">Từ 42.199.000đ với chính sách trợ giá cho giáo dục</p>
+                    </div>
+                </div>
+                
+                <div class="card product-card theme-dark">
+                    <div class="img-wrapper">
+                        <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-pro-display-202603?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=NUZWanRoamZCdURRVnJnb1VsZlUzb0tNR2h2aGJESnJIME41aVgvR0ExWnFTRjNxbmh1UnU2R29ibGdpZUFXc0prY3crUWRsN1dqVjRnMHR5S1hVblB3a1lKb2hvTFJPb0ROa2FvYmpXM2xnR2F4TWx2KzhvcVFQRUJQM3lJMHY" alt="Studio Display XDR">
+                    </div>
+                    <div class="product-content">
+                        <div class="header-row">
+                            <div class="text-content">
+                                <h3 class="product-warning">ĐẶT TRƯỚC TỪ NGÀY 4 THÁNG 3</h3>
+                                <h3 class="product-heading">Studio Display XDR</h3>
+                                <p class="product-desc">Thánh chuốt pixel.</p>
+                            </div>
+                            <svg role="img" aria-labelledby="edu-savings-svgtxt" height="35" viewBox="0 0 35 35" width="35" xmlns="http://www.w3.org/2000/svg">
+                                <g fill="none" fill-rule="evenodd"><path d="m0 0h35v35h-35z"></path><path d="m9 18.7728v5.3914c-.61143092-.6239047-.96802746-1.4535266-1-2.3265v-3.5207l.9272.4224zm11.6159 2.4615c-.9317176.4767769-1.958535.7384363-3.0048.7657l-.0867-.0016-.1354.0016c-1.0447951-.027019-2.0702278-.2880245-3.0008-.7638l-3.5775-1.6346-.8107-.3702v5.8144c2.2405033 1.4045651 4.8550652 2.0948159 7.4969 1.9792h.0063c5.8668 0 9.4968-2.5937 9.4968-5.1873v-3.5218l-.9352.4227zm9.5225-8.0083-9.9422-4.5533c-.8190429-.41572779-1.7197947-.64543162-2.6379-.6727h-.0583-.0582c-.9181305.02731605-1.8189046.25701687-2.638.6727l-9.952 4.5533c-.51552366.213068-.85177474.7158805-.85177474 1.2737s.33625108 1.060632.85177474 1.2737l3.1482 1.4444.1089.05 1.0375.4726 6.3436-3.0725c-.0703139-.1033163-.1101635-.2243204-.115-.3492 0-.4745.5565-.8784 1.3413-1.0437.5168439-.1084009 1.0505561-.1084009 1.5674 0 .7848.1653 1.3413.5692 1.3413 1.0437 0 .6213-.9514 1.125-2.125 1.125-.3450911.0006688-.6885257-.0477151-1.02-.1437l-6.1544 2.9809.9006.4112 3.5778 1.6348c.8004678.4149094 1.6838314.6449257 2.585.6731.037 0 .074-.0004333.111-.0013.0371.0009.074.0013.1111.0013.90122-.0282079 1.7846232-.2582939 2.5851-.6733l5.4522-2.4973 1.2427-.5616.1089-.05 3.1384-1.4443c.5204134-.2086963.8615206-.7130002.8615206-1.2737s-.3411072-1.0650037-.8615206-1.2737zm-21.1384 13.424c-.49597634.057359-.87133619.4755314-.875.9748v3.25c0 .5522847.44771525 1 1 1h.75c.5522847 0 1-.4477153 1-1v-3.25c-.0036638-.4992686-.3790237-.917441-.875-.9748v-1.6042c-.36454924-.2564393-.69988581-.552072-1-.8816z" fill="#08827c" fill-rule="nonzero"></path></g>
+                            </svg>
+                        </div>
+                        <p class="product-price">Từ 87.299.000đ với chính sách trợ giá cho giáo dục</p>
+                    </div>
+                </div>
+                <button class="slider-btn next" aria-label="Next slide">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                            <path d="M21.559,12.062 L15.618,17.984 L21.5221,23.944 C22.105,24.533 22.1021,25.482 21.5131,26.065 C21.2211,26.355 20.8391,26.4999987 20.4571,26.4999987 C20.0711,26.4999987 19.6851,26.352 19.3921,26.056 L12.4351,19.034 C11.8531,18.446 11.8551,17.4999987 12.4411,16.916 L19.4411,9.938 C20.0261,9.353 20.9781,9.354 21.5621,9.941 C22.1471,10.528 22.1451,11.478 21.5591,12.062 L21.559,12.062 Z"></path>
+                        </svg>
+                    </span>
+                </button>
+                <!-- other products -->
+            </div>
+    </div>
+    <!-- other card sections -->
     <!-- End Product Section & Promo Section-->
 
     <!-- Footer  -->
