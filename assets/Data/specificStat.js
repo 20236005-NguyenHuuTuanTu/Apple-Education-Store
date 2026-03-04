@@ -1,4 +1,4 @@
-const data={
+const data = {
   "versions": {
     "title": "Phiên bản",
     "des": "Chọn kích cỡ",
@@ -28,11 +28,13 @@ const data={
       {
         "id": "black",
         "name": "Đen Không Gian",
+        "hex": "#2e2c2e",
         "price": null
       },
       {
         "id": "silver",
         "name": "Bạc",
+        "hex": "#e3e4e5",
         "price": null
       }
     ]
@@ -44,7 +46,7 @@ const data={
     "options": [
       {
         "id": "256gb",
-        "storage": "256GB",
+        "storage": "Dung lượng lưu trữ 256GB",
         "memory": "12GB",
         "chip": "Chip M5 - CPU 9 lõi, GPU 10 lõi",
         "priceBase": 27199000
@@ -73,7 +75,7 @@ const data={
     ],
     "explore": "Bạn không chắc mình cần bao nhiêu dung lượng?",
     "exp_des": "Hiểu rõ hơn về dung lượng bạn cần.",
-    "action": true
+    "action": false
   },
 
   "glass": {
@@ -88,13 +90,13 @@ const data={
       {
         "id": "nano",
         "name": "Mặt kính Nano-texture",
-        "note": "Có sẵn ở các phiên bản 1TB hoặc 2TB",
+        "description": "Có sẵn ở các phiên bản có dung lượng lưu trữ 1TB hoặc 2TB",
         "priceBase": 46799000
       }
     ],
     "explore": "Mặt kính nào phù hợp với bạn?",
     "exp_des": "Cả mặt kính tiêu chuẩn và mặt kính có cấu trúc nano đều được thiết kế để đạt độ phản chiếu cực thấp. Hãy cân nhắc đến môi trường làm việc của bạn trước khi quyết định.",
-    "action": true
+    "action": false
   },
 
   "connectivity": {
@@ -116,7 +118,7 @@ const data={
     ],
     "explore": "Tại sao nên chọn Wi-Fi + Cellular?",
     "exp_des": "Cho phép bạn duy trì kết nối qua gói cước dữ liệu di động khi không có Wi-Fi.",
-    "action": true
+    "action": false
   },
 
   "engraving": {
@@ -158,7 +160,7 @@ const data={
     ],
     "explore": "Bạn muốn biết thêm về Apple Pencil?",
     "exp_des": "Apple Pencil thiết lập chuẩn mực cho vẽ và ghi chú.",
-    "action": true
+    "action": false
   },
 
   "keyboard": {
@@ -178,7 +180,7 @@ const data={
     ],
     "explore": "Bạn muốn tìm hiểu thêm về Magic Keyboard?",
     "exp_des": "Nâng cao hiệu suất công việc với trải nghiệm gõ phím tuyệt vời.",
-    "action": true
+    "action": false
   },
 
   "trade_in": {
@@ -198,12 +200,12 @@ const data={
     ],
     "explore": "Chương trình đổi cũ hoạt động như thế nào?",
     "exp_des": "Đổi thiết bị đủ điều kiện lấy điểm tín dụng hoặc tái chế miễn phí.",
-    "action": true
+    "action": false
   },
 
   "applecare": {
-    "title": "AppleCare+",
-    "des": "Bảo vệ thiết bị của bạn",
+    "title": "Gói bảo hành AppleCare+",
+    "des": "Hãy bảo vệ iPad Pro, Apple Pencil và bàn phím Apple của bạn. Học sinh/sinh viên và nhà giáo đủ điều kiện sẽ tiết kiệm được tối đa đến 10% khi mua gói hỗ trợ bảo hành AppleCare+ cho iPad",
     "options": [
       {
         "id": "add_applecare",
@@ -218,7 +220,7 @@ const data={
     ],
     "explore": "AppleCare+ hoạt động như thế nào?",
     "exp_des": "Bảo hành sự cố rơi vỡ, đổ nước và các sự cố bất ngờ khác.",
-    "action": true
+    "action": false
   }
 };
 
