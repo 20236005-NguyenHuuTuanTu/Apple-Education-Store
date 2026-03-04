@@ -1,6 +1,5 @@
 /* Layout tổng cho cả vùng chứa */
 .card-section {
-    position: relative;
     padding: 40px 0;
     font-family: "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
 }
@@ -20,7 +19,7 @@
     gap: 20px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    padding: 20px 0 40px;
+    padding: 20px 0 20px;
     scrollbar-width: none;
     scroll-behavior: smooth;
 }
@@ -33,10 +32,16 @@
     flex: 0 0 auto;
     width: 400px;
     height: 500px;
-    border-radius: 28px;
+    border-radius: 18px;
     position: relative;
     overflow: hidden;
-    transition: transform 0.4s ease;
+    transition: all .3s cubic-bezier(0,0,.5,1);
+    background-color: #fff;
+    box-shadow: 2px 4px 12px #00000014;
+}
+
+.card.small {
+    width: 313px;
 }
 
 .card:hover {
@@ -52,29 +57,25 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 44px;
-    height: 44px;
+    z-index: 9;
     border-radius: 50%;
-    border: none;
-    background: rgba(0,0,0,0.6);
-    color: #fff;
+    width: 50px;
+    height: 50px;
+    opacity: 0.8;
+    border: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-    z-index: 10;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
-}
-
-.slider-btn.next {
-    right: 8px;
 }
 
 .slider-btn.prev {
-    left: 8px;
+    left: 10px;
 }
 
-.slider-btn[disabled] {
-    opacity: 0.35;
-    cursor: default;
+.slider-btn.next {
+    right: 10px;
+}
+
+.slider-btn:disabled {
+    display: none;
 }
