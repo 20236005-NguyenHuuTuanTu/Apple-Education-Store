@@ -1,0 +1,85 @@
+.ProductSection .inner-wrap{
+    display: flex;
+    margin-top: 80px;
+    
+}
+
+.ProductSection .stickyImage{
+    width: 60%;
+}
+
+
+.ProductSection .productOptions{
+    width: 30%;
+}
+
+
+.ProductSection .productOptions .block-wrap{
+    height: fit-content;
+    min-height: 400px;
+}
+
+
+.ProductSection .productOptions .title{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.ProductSection .productOptions .sub-title{
+    font-size: 24px;
+    font-weight: 600;
+    color: #86868b;
+}
+
+.ProductSection .productOptions .box{
+    display: flex;
+    margin-top: 18px;
+    border: 2px solid #000;
+    border-radius: 12px;
+    padding: 18px 14px;
+    justify-content: space-between;
+    align-items: center
+
+}
+
+.ProductSection .productOptions .box:hover{
+    cursor: pointer;
+    border: 2px solid var(--blue);
+    transition: all .3s ease-in-out;
+}
+
+.ProductSection .box .info{
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+}
+
+.ProductSection .box .des{
+    font-size: 12px;
+    font-weight:400 ;
+    
+}
+.ProductSection .box .price{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.ProductSection .box-explore{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    font-size: 14px;
+    border: none;
+    margin-top: 18px;
+    border-radius: 12px;
+    padding: 18px 14px;
+    background-color: #F5F5F7;
+}
+
+.ProductSection .box-explore .question{
+    font-weight: 600;
+}
