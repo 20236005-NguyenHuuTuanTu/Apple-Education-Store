@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!wrappers) return;
 
     wrappers.forEach((wrapper) => {
-        const prevBtn = wrapper.parentElement.querySelector('.slider-btn.prev');
-        const nextBtn = wrapper.parentElement.querySelector('.slider-btn.next')   
+        const prevBtn = wrapper.parentElement.querySelector('.slider-btn--prev');
+        const nextBtn = wrapper.parentElement.querySelector('.slider-btn--next');
         if (!prevBtn || !nextBtn) return;
         
         function getCardGap() {
