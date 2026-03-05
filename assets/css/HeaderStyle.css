@@ -83,9 +83,6 @@
     .list-header-item ul {
         justify-content: space-around; 
     }
-    .header-top .inner-wrap {
-        justify-content: center; 
-    }
 
     .menu-mobile-icon {
     display: block;
