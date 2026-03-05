@@ -1,10 +1,17 @@
+
+.ProductSection .product-container{
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .ProductSection .inner-wrap{
     display: flex;
     margin-top: 80px;
     justify-content: space-between;
     letter-spacing: -0.5px;
-    
-    
+    line-height: 1.2;    
 }
 
 .ProductSection .stickyImage{
@@ -48,6 +55,7 @@
 .ProductSection .productOptions .block-wrap{
     height: fit-content;
     min-height: 400px;
+    margin-bottom: 40px;
 }
 
 
