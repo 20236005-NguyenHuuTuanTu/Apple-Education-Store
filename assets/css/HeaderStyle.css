@@ -15,6 +15,9 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 li a{
@@ -22,6 +25,7 @@ li a{
     align-items: center;
     text-decoration: none;
     color: rgba(0, 0, 0, .8);
+    font-size: 12px;
 }
 
 li a:hover{
@@ -44,6 +48,7 @@ li a:hover{
     text-decoration: none;
     color: rgba(0, 0, 0, .8);
     padding: 0 12px;
+    font-size: 12px;
 }
 
 .header-top a:first-child{
