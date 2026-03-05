@@ -89,13 +89,13 @@
 .card--dark .card__heading,
 .card--dark .card__desc,
 .card--dark .card__price {
-    color: #fff;
+    color: var(--bg);
 }
 
 .card--light .card__heading,
 .card--light .card__desc,
 .card--light .card__price {
-    color: #000;
+    color: var(--text);
 }
 
 .color-box {

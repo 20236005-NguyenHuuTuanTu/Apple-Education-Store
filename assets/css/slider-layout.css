@@ -1,7 +1,7 @@
 /* Layout tổng cho cả vùng chứa */
 .card-section {
     padding: 40px 0;
-    font-family: "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+    font-family: var(--font);
 }
 
 .card-section__heading {
@@ -11,7 +11,7 @@
 }
 
 .card-section__subheading {
-    color: #6e6e73;
+    color: var(--muted);
 }
 
 .card-wrapper {
@@ -34,16 +34,12 @@
     height: 500px;
     border-radius: 18px;
     overflow: hidden;
-    background-color: #fff;
+    background-color: var(--bg);
     box-shadow: 2px 4px 12px #00000014;
-
-    /* product-card stuff */
     position: relative;
     cursor: pointer;
-    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
-
-    /* chọn 1 trong 2 transition */
-    transition: all .3s cubic-bezier(0,0,.5,1);
+    font-family: var(--font);
+    transition: all var(--t) cubic-bezier(0,0,.5,1);
 }
 
 .card:hover {
