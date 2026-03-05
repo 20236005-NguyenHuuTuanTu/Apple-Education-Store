@@ -1,4 +1,4 @@
-const data={
+const data = {
   "versions": {
     "title": "Phiên bản",
     "des": "Chọn kích cỡ",
@@ -28,11 +28,13 @@ const data={
       {
         "id": "black",
         "name": "Đen Không Gian",
+        "hex": "#2e2c2e",
         "price": null
       },
       {
         "id": "silver",
         "name": "Bạc",
+        "hex": "#e3e4e5",
         "price": null
       }
     ]
@@ -44,28 +46,28 @@ const data={
     "options": [
       {
         "id": "256gb",
-        "storage": "256GB",
+        "storage": "Dung lượng lưu trữ 256GB",
         "memory": "12GB",
         "chip": "Chip M5 - CPU 9 lõi, GPU 10 lõi",
         "priceBase": 27199000
       },
       {
         "id": "512gb",
-        "storage": "512GB",
+        "storage": "Dung lượng lưu trữ 512GB",
         "memory": "12GB",
         "chip": "Chip M5 - CPU 9 lõi, GPU 10 lõi",
         "priceBase": 32799000
       },
       {
         "id": "1tb",
-        "storage": "1TB",
+        "storage": "Dung lượng lưu trữ 1TB",
         "memory": "16GB",
         "chip": "Chip M5 - CPU 10 lõi, GPU 10 lõi",
         "priceBase": 43999000
       },
       {
         "id": "2tb",
-        "storage": "2TB",
+        "storage": "Dung lượng lưu trữ 2TB",
         "memory": "16GB",
         "chip": "Chip M5 - CPU 10 lõi, GPU 10 lõi",
         "priceBase": 55199000
@@ -73,7 +75,7 @@ const data={
     ],
     "explore": "Bạn không chắc mình cần bao nhiêu dung lượng?",
     "exp_des": "Hiểu rõ hơn về dung lượng bạn cần.",
-    "action": true
+    "action": false
   },
 
   "glass": {
@@ -88,13 +90,13 @@ const data={
       {
         "id": "nano",
         "name": "Mặt kính Nano-texture",
-        "note": "Có sẵn ở các phiên bản 1TB hoặc 2TB",
+        "description": "Có sẵn ở các phiên bản có dung lượng lưu trữ 1TB hoặc 2TB",
         "priceBase": 46799000
       }
     ],
     "explore": "Mặt kính nào phù hợp với bạn?",
     "exp_des": "Cả mặt kính tiêu chuẩn và mặt kính có cấu trúc nano đều được thiết kế để đạt độ phản chiếu cực thấp. Hãy cân nhắc đến môi trường làm việc của bạn trước khi quyết định.",
-    "action": true
+    "action": false
   },
 
   "connectivity": {
@@ -104,19 +106,19 @@ const data={
       {
         "id": "wifi",
         "name": "Wi-Fi",
-        "description": "Mọi iPad đều có thể kết nối với Wi-Fi.",
+        "description": "Mọi iPad đều có thể kết nối với Wi-Fi, vì vậy bạn sẽ luôn được kết nối. ",
         "priceBase": 27199000
       },
       {
         "id": "wifi_cellular",
         "name": "Wi-Fi + Cellular",
-        "description": "Cho phép duy trì kết nối khi không có Wi-Fi.",
+        "description": "Wi-Fi + Cellular cho phép bạn duy trì kết nối khi không có Wi-Fi.",
         "priceBase": 32799000
       }
     ],
     "explore": "Tại sao nên chọn Wi-Fi + Cellular?",
-    "exp_des": "Cho phép bạn duy trì kết nối qua gói cước dữ liệu di động khi không có Wi-Fi.",
-    "action": true
+    "exp_des": "Nếu không có Wi-Fi, Wi-Fi + Cellular sẽ cho phép bạn duy trì kết nối qua gói cước dữ liệu di động.",
+    "action": false
   },
 
   "engraving": {
@@ -126,6 +128,7 @@ const data={
       {
         "id": "add_engraving",
         "name": "Thêm Chi Tiết Khắc",
+        "description": "Hình khắc sẽ không ảnh hường đến giá trị đổi cũ lấy mới với Apple.",
         "price": 0
       },
       {
@@ -157,8 +160,8 @@ const data={
       }
     ],
     "explore": "Bạn muốn biết thêm về Apple Pencil?",
-    "exp_des": "Apple Pencil thiết lập chuẩn mực cho vẽ và ghi chú.",
-    "action": true
+    "exp_des": "Apple Pencil thiết lập chuẩn mực cho các tác vụ vẽ, tô màu, viết tay và ghi chú: trực quan, chuẩn xác và kỳ diệu.",
+    "action": false
   },
 
   "keyboard": {
@@ -167,7 +170,7 @@ const data={
     "options": [
       {
         "id": "magic_keyboard",
-        "name": "Thêm Magic Keyboard",
+        "name": "Thêm Magic Keyboard cho iPad Pro",
         "price": 7602000
       },
       {
@@ -177,17 +180,18 @@ const data={
       }
     ],
     "explore": "Bạn muốn tìm hiểu thêm về Magic Keyboard?",
-    "exp_des": "Nâng cao hiệu suất công việc với trải nghiệm gõ phím tuyệt vời.",
-    "action": true
+    "exp_des": "Nâng cao hiệu suất công việc với trải nghiệm gõ phím và bàn di tuyệt vời.",
+    "action": false
   },
 
   "trade_in": {
     "title": "Apple Trade In",
-    "des": "Nhận điểm tín dụng khi đổi thiết bị",
+    "des": "Nhận 900.000đ-24.100.000đ điểm tín dụng để mua iPad mới.",
     "options": [
       {
         "id": "add_trade_in",
         "name": "Thêm yêu cầu đổi cũ lấy mới",
+        "description": "Đổi iPad của bạn lấy điểm tín dụng hoặc tái chế miễn phí.",
         "price": null
       },
       {
@@ -197,13 +201,13 @@ const data={
       }
     ],
     "explore": "Chương trình đổi cũ hoạt động như thế nào?",
-    "exp_des": "Đổi thiết bị đủ điều kiện lấy điểm tín dụng hoặc tái chế miễn phí.",
-    "action": true
+    "exp_des": "Chúng tôi sẽ giúp bạn đổi thiết bị đủ điều kiện lấy điểm tín dụng để mua iPad Pro mới hoặc tái chế thiết bị miễn phí.",
+    "action": false
   },
 
   "applecare": {
-    "title": "AppleCare+",
-    "des": "Bảo vệ thiết bị của bạn",
+    "title": "Gói bảo hành AppleCare+",
+    "des": "Hãy bảo vệ iPad Pro, Apple Pencil và bàn phím Apple của bạn. Học sinh/sinh viên và nhà giáo đủ điều kiện sẽ tiết kiệm được tối đa đến 10% khi mua gói hỗ trợ bảo hành AppleCare+ cho iPad",
     "options": [
       {
         "id": "add_applecare",
@@ -218,7 +222,7 @@ const data={
     ],
     "explore": "AppleCare+ hoạt động như thế nào?",
     "exp_des": "Bảo hành sự cố rơi vỡ, đổ nước và các sự cố bất ngờ khác.",
-    "action": true
+    "action": false
   }
 };
 
