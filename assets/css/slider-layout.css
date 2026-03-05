@@ -1,0 +1,83 @@
+/* Layout tổng cho cả vùng chứa */
+.card-section {
+    padding: 40px 0;
+    font-family: var(--font);
+}
+
+.card-section__heading {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.card-section__subheading {
+    color: var(--muted);
+}
+
+.card-wrapper {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 0 20px;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.card-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    /* layout */
+    flex: 0 0 auto;
+    width: 400px;
+    height: 500px;
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: var(--bg);
+    box-shadow: 2px 4px 12px #00000014;
+    position: relative;
+    cursor: pointer;
+    font-family: var(--font);
+    transition: all var(--t) cubic-bezier(0,0,.5,1);
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.card--small {
+    width: 313px;
+}
+
+/* slider buttons */
+.slider-container {
+    position: relative;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    opacity: 0.8;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-btn--prev {
+    left: 10px;
+}
+
+.slider-btn--next {
+    right: 10px;
+}
+
+.slider-btn:disabled {
+    display: none;
+}
