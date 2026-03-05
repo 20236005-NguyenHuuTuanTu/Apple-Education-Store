@@ -1,36 +1,55 @@
-.container{
+.container {
     width: 100%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 22px;
 }
 
+.list-header-item {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    height: 44px;
+    gap: 40px;
+}
 
 .list-header-item ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 44px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-li a{
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     align-items: center;
-    text-decoration: none;
-    color: rgba(0, 0, 0, .8);
-    font-size: 12px;
 }
 
-li a:hover{
-    color:black;
-    transition: all .3s ease-in-out;
+.main-nav {
+    flex-grow: 1; 
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 12px;
+    letter-spacing: -0.01em;
+    transition: opacity 0.3s;
+}
+
+.main-nav li a:hover {
+    opacity: 0.6;
+}
+
+.action-nav {
+    gap: 25px;
+}
+
+.action-nav svg {
+    cursor: pointer;
+    fill: rgba(0, 0, 0, 0.8);
+}
+
+.menu-mobile-icon {
+    display: none;
 }
 
 .header-top{
@@ -54,4 +73,22 @@ li a:hover{
 .header-top a:first-child{
     border-right: 1px solid rgba(0, 0, 0, .8);
     padding-left: 0;
+}
+
+@media screen and (max-width: 832px){
+    .list-header-item .main-nav {
+        display: none; 
+    }
+    
+    .list-header-item ul {
+        justify-content: space-around; 
+    }
+    .header-top .inner-wrap {
+        justify-content: center; 
+    }
+
+    .menu-mobile-icon {
+    display: block;
+}
+
 }
