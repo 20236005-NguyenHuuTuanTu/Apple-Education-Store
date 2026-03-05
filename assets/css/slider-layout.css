@@ -34,7 +34,7 @@
     height: 500px;
     border-radius: 18px;
     overflow: hidden;
-    background-color: var(--bg);
+    background-color: #fff;
     box-shadow: 2px 4px 12px #00000014;
     position: relative;
     cursor: pointer;
