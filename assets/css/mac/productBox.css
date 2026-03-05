@@ -41,6 +41,7 @@
 
 .ProductSection .productOptions{
     width: 30%;
+    
 }
 
 
@@ -53,12 +54,15 @@
 .ProductSection .productOptions .title{
     font-size: 24px;
     font-weight: 600;
+    letter-spacing: -1px;
 }
 
 .ProductSection .productOptions .sub-title{
     font-size: 24px;
     font-weight: 600;
     color: #86868b;
+    letter-spacing: -1px;
+
 }
 
 .ProductSection .productOptions .box{
@@ -199,4 +203,80 @@
 
 .selected-color-name {
     font-weight: 700;
+}
+
+.ProductSection .applecare .box {
+    display: block;
+    border: 1px solid #d2d2d7;
+    padding: 15px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.ProductSection .applecare .box:hover {
+    border-color: #0071e3;
+}
+
+.ProductSection .applecare .header-box {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+}
+
+.ProductSection .applecare .name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 21px;
+    font-weight: 600;
+    color: #1d1d1f;
+}
+
+
+
+.ProductSection .applecare .header-box .price {
+    font-size: 17px;
+    color: #86868b;
+}
+.ProductSection .applecare .body-box{
+    border-top: 1px solid #d2d2d7;
+    padding-top: 20px;
+}
+
+.applecare-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.applecare-features li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #1d1d1f;
+}
+
+.applecare-features li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #86868b;
+}
+
+.edu-discount {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #86868b;
+    border-top: 1px solid #d2d2d7;
+    padding-top: 15px;
+}
+
+.edu-discount i {
+    font-size: 18px;
 }

@@ -47,7 +47,6 @@ function renderConfigurator() {
         "apple_pencil": ".pencil",
         "keyboard": ".Keyboard",
         "trade_in": ".trade-in",
-        "applecare": ".applecare"
     };
 
     Object.keys(data).forEach(key => {
