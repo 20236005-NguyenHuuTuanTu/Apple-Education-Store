@@ -242,7 +242,16 @@ main {
     display: block;
 }
 
+<<<<<<< HEAD
+
+
+
+
+
+
+=======
 .input-container.error,
 .inner-input-container.error {
     margin-bottom: 9px !important; 
 }
+>>>>>>> main
