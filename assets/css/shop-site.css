@@ -1,0 +1,222 @@
+.payment__header, .payment__body {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 22px;
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 8px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.payment__heading {
+    display: flex;
+    align-items:flex-start;
+}
+
+.header__payment-heading h2{
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 0.3px;
+}
+
+.order-review-toggle, .add-optional-email{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    color: #1E73C9;
+    cursor: pointer;
+    padding: 0;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+
+.body__payment-heading h1{
+    width: 100%;
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 0.3px;
+    padding: 80px 0 40px 0;
+}
+
+.body__wrapper {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 40px;
+}
+
+
+.body__wrapper-left--top {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.body__wrapper-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 40px 20px 20px;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.input-container input, 
+.input-container select,
+.inner-input-container input,
+.inner-input-container select {
+    width: 100%;
+    height: 60px;
+    padding: 20px 16px 8px 16px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    background-color: white;
+    cursor: pointer;
+}
+
+.input-container input:focus,
+.input-container select:focus,
+.inner-input-container input:focus,
+.inner-input-container select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.input-container label,
+.input-container select + label,
+.inner-input-container label {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    color: #999;
+    font-size: 16px;
+    padding: 0 4px;
+}
+
+/* Floating label effect */
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label,
+.input-container select:focus + label {
+    top: 8px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.input-container #city,
+.inner-input-container label {
+    top: 8px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+}
+
+.inner-input-container {
+    flex: 1;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.body__wrapper-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.body__wrapper-right--bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h3 {
+    font-size: 16px;
+    color: #666;
+    font-weight: 400;
+}
+
+.input-container select:focus + label,
+.input-container select:not([value="default"]) + label {
+    top: 8px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+option {
+    font-size: 16px;
+}
+
+.body__payment-footer{
+    width: 100%;
+}
+
+.payment-footer-top {
+    padding: 40px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.payment-footer-top .input-container {
+    width: 55%;
+}
+
+.add-optional-email {
+    margin: 10px 0;
+}
+
+.body__payment-footer h3{
+    font-size: 16px;
+    color: #666;
+    font-weight: 400;
+}
+
+.payment-footer-bottom{
+    border: none;
+    padding: 60px 0;
+}
+
+.next-to-payment {
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1E73C9;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    height: 60px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.next-to-payment:hover {
+    background-color: #155a8a;
+    text-decoration: none;
+}
+
+main {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}

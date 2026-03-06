@@ -1,0 +1,217 @@
+#shop-dialog {
+    border: none;
+    border-radius: 12px;
+    max-width: 480px;
+    width: 100%;
+    height: fit-content;
+    background-color: #ffffff;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+#shop-dialog::backdrop {
+    backdrop-filter: blur(5px);
+}
+
+/* ========== HEADER STYLING ========== */
+.dialog-header {
+    position: relative;
+    padding: 24px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-title h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 0.3px;
+}
+
+#close-dialog {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+
+    border: none;
+    background: transparent;
+    border-radius: 50%;
+
+    cursor: pointer;
+    color: black;
+
+    transition: all 0.2s ease;
+}
+
+#close-dialog:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+#close-dialog svg {
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+}
+
+/* ========== MAIN CONTENT STYLING ========== */
+#shop-dialog main {
+    padding: 32px 24px;
+    min-height: 350px;
+    overflow-y: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+/* ========== FORM SECTIONS ========== */
+.personal-info, .address-info, .cart-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ========== FORM ITEMS ========== */
+.info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.info-item label {
+    margin-left: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* ========== INPUT STYLING ========== */
+.info-item input[type="text"],
+.info-item input[type="email"],
+.info-item input[type="tel"],
+.info-item select {
+    padding: 12px 14px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+    color: #333333;
+}
+
+.info-item input[type="text"]:focus,
+.info-item input[type="email"]:focus,
+.info-item input[type="tel"]:focus,
+.info-item select:focus {
+    outline: none;
+    border-color: #667eea;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+}
+
+.info-item input[type="text"]:hover,
+.info-item input[type="email"]:hover,
+.info-item input[type="tel"]:hover,
+.info-item select:hover {
+    border-color: #667eea;
+}
+
+.info-item input::placeholder {
+    color: #999999;
+}
+
+/* Select Dropdown Styling */
+.info-item select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+    padding-right: 36px;
+    cursor: pointer;
+}
+
+.info-item select option {
+    padding: 8px;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* ========== FOOTER STYLING ========== */
+#shop-dialog footer {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 12px;
+    padding: 16px 24px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #e0e0e0;
+}
+
+.return,
+.next,
+.pay {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.return {
+    background-color: #e0e0e0;
+    color: #333333;
+}
+
+.return:hover {
+    background-color: #d0d0d0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.next, .pay {
+    background: #1E73C9;
+    color: #ffffff;
+}
+
+.next:hover,
+.pay:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.next:active,
+.pay:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2);
+}
+
+.pay {
+    background: #1E73C9;
+}
+
+.pay:hover {
+    box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
+}

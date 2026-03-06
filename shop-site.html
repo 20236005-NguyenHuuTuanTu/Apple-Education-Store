@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" con nt="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="growthbook.js"></script>
+    <script src="growthbook.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/slider-layout.css">
+    <link rel="stylesheet" href="./assets/css/card.css">
+    <script src="./assets/js/index.js"></script>
+    <link rel="stylesheet" href="./assets/css/HeaderStyle.css">
+    <link rel="stylesheet" href="./assets/css/shop-site.css">
+    <link rel="stylesheet" href="./assets/css/hero-banner.css">
+    <script src="./assets/js/slider-btn.js"></script>
+    <script src="./assets/js/shop-site.js"></script>
+</head>
+
+<body>
+    <!-- Header  -->
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="inner-wrap">
+                    <a href="#">Trang Chủ Cửa Hàng Giáo Dục</a>
+                    <a href="#">Thoát</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="inner-wrap">
+                <div class="list-header-item">
+                    <div class="header-logo">
+                        <a href="/">
+                            <svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <ul class="main-nav">
+
+                        <li>
+                            <a href="/">Cửa hàng</a>
+                        </li>
+                        <li>
+                            <a href="/">Mac</a>
+                        </li>
+                        <li>
+                            <a href="/">Ipad</a>
+                        </li>
+                        <li>
+                            <a href="/">Iphone</a>
+                        </li>
+                        <li>
+                            <a href="/">Watch</a>
+                        </li>
+                        <li>
+                            <a href="/">AirPods</a>
+                        </li>
+                        <li>
+                            <a href="/">TV & Nhà</a>
+                        </li>
+                        <li>
+                            <a href="/">Giải trí</a>
+                        </li>
+                        <li>
+                            <a href="/">Phụ kiện</a>
+                        </li>
+                        <li>
+                            <a id="ht" href="/">Hỗ trợ</a>
+                        </li>
+
+                    </ul>
+                    <ul class="action-nav">
+                        <li class="search-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="44px" viewBox="0 0 15 44">
+                                <path
+                                    d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z">
+                                </path>
+                            </svg>
+                        </li>
+                        <li class="bag-icon">
+                            <svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m11.3535 16.0283h-1.0205a3.4229 3.4229 0 0 0 -3.333-2.9648 3.4229 3.4229 0 0 0 -3.333 2.9648h-1.02a2.1184 2.1184 0 0 0 -2.117 2.1162v7.7155a2.1186 2.1186 0 0 0 2.1162 2.1167h8.707a2.1186 2.1186 0 0 0 2.1168-2.1167v-7.7155a2.1184 2.1184 0 0 0 -2.1165-2.1162zm-4.3535-1.8652a2.3169 2.3169 0 0 1 2.2222 1.8652h-4.4444a2.3169 2.3169 0 0 1 2.2222-1.8652zm5.37 11.6969a1.0182 1.0182 0 0 1 -1.0166 1.0171h-8.7069a1.0182 1.0182 0 0 1 -1.0165-1.0171v-7.7155a1.0178 1.0178 0 0 1 1.0166-1.0166h8.707a1.0178 1.0178 0 0 1 1.0164 1.0166z">
+                                </path>
+                            </svg>
+                        </li>
+                        <li class="menu-mobile-icon">
+                            <svg width="18" height="18" viewBox="0 0 18 18">
+                                <polyline id="globalnav-menutrigger-bread-bottom"
+                                    class="globalnav-menutrigger-bread globalnav-menutrigger-bread-bottom" fill="none"
+                                    stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" points="2 12, 16 12">
+                                    <animate id="globalnav-anim-menutrigger-bread-bottom-open" attributeName="points"
+                                        keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze"
+                                        calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1"
+                                        values=" 2 12, 16 12; 2 9, 16 9; 3.5 15, 15 3.5"></animate>
+                                    <animate id="globalnav-anim-menutrigger-bread-bottom-close" attributeName="points"
+                                        keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze"
+                                        calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1"
+                                        values=" 3.5 15, 15 3.5; 2 9, 16 9; 2 12, 16 12"></animate>
+                                </polyline>
+                                <polyline id="globalnav-menutrigger-bread-top"
+                                    class="globalnav-menutrigger-bread globalnav-menutrigger-bread-top" fill="none"
+                                    stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" points="2 5, 16 5">
+                                    <animate id="globalnav-anim-menutrigger-bread-top-open" attributeName="points"
+                                        keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze"
+                                        calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1"
+                                        values=" 2 5, 16 5; 2 9, 16 9; 3.5 3.5, 15 15"></animate>
+                                    <animate id="globalnav-anim-menutrigger-bread-top-close" attributeName="points"
+                                        keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze"
+                                        calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1"
+                                        values=" 3.5 3.5, 15 15; 2 9, 16 9; 2 5, 16 5"></animate>
+                                </polyline>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+    <main>
+        <div class="payment__header">
+            <div class="header__container">
+                <div class="header__payment-heading">
+                    <h2>Thanh toán</h2>
+                </div>
+                <div class="payment__order-review">
+                    <button class="order-review-toggle">Hiển thị tóm tắt đơn hàng: 33.760.000đ</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="payment__body">
+            <div class="body__container">
+                <div class="body__payment-heading">
+                    <h1>Chúng tôi giao hàng cho bạn đến địa chỉ nào</h1>
+                </div>
+                <div class="body__wrapper">
+                    <div class="body__wrapper-left">
+                        <div class="body__wrapper-left--top">
+                            <h2>Nhập tên của bạn và địa chỉ trước khi sáp nhập</h2>
+                        </div>
+                        <div class="body__wrapper-left--bottom">
+                            <form>
+                                <div class="input-container">
+                                    <input type="text" class="input__first-name" id="first-name" placeholder=" ">
+                                    <label for="first-name" class="input__label">Tên</label>
+                                </div>
+                                <div class="input-container">
+                                    <input type="text" class="input__last-name" id="last-name" placeholder=" ">
+                                    <label for="last-name" class="input__label">Họ</label>
+                                </div>
+                                <div class="input-container">
+                                    <input type="text" class="input__address" id="address" placeholder=" ">
+                                    <label for="address" class="input__label">Địa chỉ</label>
+                                </div>
+                                <div class="input-container">
+                                    <input type="text" class="input__second-address" id="second-address"
+                                        placeholder=" ">
+                                    <label for="second-address" class="input__label">Thông tin địa chỉ thức hai (không
+                                        bắt
+                                        buộc)</label>
+                                </div>
+
+                                <div class="input-container">
+                                    <select class="select__city" id="city" placeholder=" ">
+                                        <option value="default">Chọn tỉnh/thành phố</option>
+                                        <option value="option1">Hà Nội</option>
+                                        <option value="option2">TP. Hồ Chí Minh</option>
+                                        <option value="option3">Đà Nẵng</option>
+                                        <option value="option4">Hải Phòng</option>
+                                        <option value="option5">Cần Thơ</option>
+                                        <option value="option6">Nha Trang</option>
+                                        <option value="option7">Quy Nhơn</option>
+                                        <option value="option8">Vũng Tàu</option>
+                                        <option value="option9">Huế</option>
+                                        <option value="option10">Quảng Ninh</option>
+                                    </select>
+                                    <label for="city" class="input__label">Tỉnh/Thành phố</label>
+                                </div>
+                                <div class="input-wrapper">
+                                    <div class="inner-input-container">
+                                        <select class="select__district" id="district" placeholder=" ">
+                                            <option value="default">Chọn quận/huyện</option>
+                                            <option value="option1">Quận Hai Bà Trưng</option>
+                                            <option value="option2">Quận Đống Đa</option>
+                                            <option value="option3">Quận Cầu Giấy</option>
+                                            <option value="option4">Quận Ba Đình</option>
+                                            <option value="option5">Quận Hoàn Kiếm</option>
+                                            <option value="option6">Quận Thanh Xuân</option>
+                                            <option value="option7">Quận Tây Hồ</option>
+                                            <option value="option8">Quận Long Biên</option>
+                                            <option value="option9">Quận Hoàng Mai</option>
+                                            <option value="option10">Huyện Phúc Thọ</option>
+
+                                        </select>
+                                        <label for="district" class="input__label">Quận/Huyện</label>
+                                    </div>
+                                    <div class="inner-input-container">
+                                        <select class="select__ward" id="ward" placeholder=" ">
+                                            <option value="default">Chọn phường/xã</option>
+                                            <option value="option1">Phường Trương Định</option>
+                                            <option value="option2">Phường Tương Mai</option>
+                                            <option value="option3">Phường Nguyễn Trãi</option>
+                                            <option value="option4">Phường Bạch Đằng</option>
+                                            <option value="option5">Phường Vĩnh Tuy</option>
+                                            <option value="option6">Phường Minh Khai</option>
+                                            <option value="option7">Phường Giáp Bát</option>
+                                            <option value="option8">Phường Lĩnh Nam</option>
+                                            <option value="option9">Phường Thịnh Liệt</option>
+                                            <option value="option10">Phường Yên Sở</option>
+                                        </select>
+                                        <label for="ward" class="input__label">Phường/Xã</label>
+                                    </div>
+                                </div>
+                                <div class="input-container">
+                                    <input type="text" class="input__postal-code" id="postal-code" placeholder=" ">
+                                    <label for="postal-code" class="input__label">Mã bưu điện (không bắt buộc)</label>
+                                </div>
+                                <div class="input-container">
+                                    <select class="default__nation" id="nation" placeholder=" " disabled>
+                                        <option value="default">Việt Nam</option>
+                                    </select>
+                                    <label for="nation" class="input__label" id="country-label">Quốc gia</label>
+                                </div>
+                                <label class="checkbox-wrapper">
+                                    <input type="checkbox">Đây là địa chỉ doanh nghiệp
+                                </label>
+
+                                <h2 style="padding: 20px 0;">Thông tin liên hệ của bạn là gì?</h2>
+
+                                <div class="input-container">
+                                    <input type="email" class="input__email" id="email" placeholder=" ">
+                                    <label for="email" class="input__label">Email</label>
+                                </div>
+
+                                <div class="input-container">
+                                    <input type="text" class="input__phone" id="phone" placeholder=" ">
+                                    <label for="phone" class="input__label">Số điện thoại</label>
+                                </div>
+
+
+                            </form>
+                        </div>
+
+
+                    </div>
+                    <div class="body__wrapper-right">
+                        <div class="body__wrapper-right--top">
+                            <h3">Người nhận phải là người mua hợp lệ (cha mẹ mua cho con là sinh viên đại học không được
+                                là người
+                                nhận đơn hàng), chúng tôi có thể yêu cầu thêm thông tin để xác minh tính hợp lệ trước
+                                khi vận
+                                chuyển đơn hàng. Vui lòng tham khảo Chính Sách Bán Hàng Và Hoàn Tiền để biết thêm thông
+                                tin chi
+                                tiết.</h3>
+                        </div>
+                        <div class="body__wrapper-right--bottom">
+                            <h3>Chúng tôi sẽ gửi biên nhận cho bạn qua email và gửi thông tin cập nhật về đơn hàng tới
+                                điện thoại di động của bạn qua SMS hoặc iMessage.
+                                Số Điện Thoại
+                                Lưu ý: Bạn không thể thay đổi số điện thoại đã nhập sau khi đặt hàng. Nếu thanh toán
+                                bằng “Trả góp hàng tháng với MoMo”, vui lòng nhập số điện thoại đăng ký MoMo của bạn..
+                            </h3>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="body__payment-footer">
+                    <div class="payment-footer-top">
+                        <h3>Chia sẻ thông tin nhận với người khác</h3>
+                        <button class="add-optional-email">Nhập địa chỉ email</button>
+                        <div class="input-container" style="padding-bottom: ;">
+                            <input type="email" class="input__email" id="email" placeholder=" ">
+                            <label for="email" class="input__label">Email (không bắt buộc)</label>
+                        </div>
+                    </div>
+                    <div class="payment-footer-bottom">
+                        <button class="next-to-payment">Tiếp tục đến phần thanh toán</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer  -->
+    <!-- End Footer -->
+</body>
+
+</html>
