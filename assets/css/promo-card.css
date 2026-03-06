@@ -1,0 +1,153 @@
+.promo-card{
+    position: relative;
+    box-shadow: 2px 4px 12px #00000014;
+}
+.promo-card__content {
+    position: absolute; /* Đè lên toàn bộ Card */
+    top: 0;
+    left: 0;
+    width: var(--content-width, 100%);
+    height: 100%;
+    z-index: 2;
+}
+.promo-card__text-group {
+    padding: 30px;
+    box-sizing: border-box;
+}
+.promo-card__subheading{
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    color: #424245;
+}
+.promo-card__heading {
+    font-size: 28px;
+    font-weight: 600;
+    filter: drop-shadow(0 0 0.2px rgba(0,0,0,0.3));
+    line-height: 1.1;
+    letter-spacing: 0.007em;
+    color: #1d1d1f;
+    margin: 0 0 10px 0;
+}
+.promo-card__desc{
+    font-size: 17px;
+    line-height: 1.2353641176;
+    font-weight: 400;
+    color: #1d1d1f;
+
+}
+.promo-card__img-wrapper {
+    width: 100%;
+    height: 100%; 
+    position: relative;
+}
+.promo-card__image {
+    display: block;    
+    width: 100%;      
+    height: 100%;      
+    object-fit: cover; 
+}
+
+.promo-card.promo-card--dark .promo-card__heading,
+.promo-card.promo-card--dark .promo-card__desc {
+    color: #ffffff;
+}
+.promo-card.promo-card--dark .promo-card__subheading {
+    color: #f5f5f7;
+}
+
+.promo-card.promo-card--white .promo-card__text-group {
+    margin-top: 24px;
+    margin-inline-start: -3% !important; 
+}
+
+.card-stack{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 0 0 auto;
+}
+.card-stack__item--small {
+    height: 240px;
+}
+.diff__content{
+    padding: 1.7647rem;
+    display: flex; 
+    flex-direction: column;
+}
+.diff__icon{
+    height: 48px;
+    padding-bottom: 18px;
+    padding-top: 3px;
+    display: flex;
+    align-items: center;
+}
+.diff__svg-icon {
+    fill: currentColor;
+}
+.diff__title{
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 1.16667;
+    color: #1d1d1f;
+ 
+}
+
+.diff--teal .dd-highlight,
+.diff--teal .diff__icon {
+    color: #007171; 
+}
+
+.diff--blue .dd-highlight,
+.diff--blue .diff__icon {
+    color: #007aff; 
+}
+
+.diff--green .dd-highlight,
+.diff--green .diff__icon {
+    color: #008009; 
+}
+
+.diff--purple .dd-highlight,
+.diff--purple .diff__icon {
+    color: #AC39FF; 
+}
+
+/* Chú thích phía cuối */
+.diff__footnote {
+    font-size: 0.6em; 
+    position: relative; 
+    top: -0.5em; 
+    vertical-align: initial; 
+    margin-left: 2px;
+    color: #1d1d1f;
+    -webkit-text-stroke: 0.3px #1d1d1f;  /* Thêm viền cùng màu để tăng độ dày */
+}
+
+.promo-card--large {
+    width: 480px !important; 
+}
+.promo-card__highlight--ai {
+    /* Dải màu gradient lấy chính xác từ ảnh Inspect của bạn */
+    background-image: linear-gradient(
+        108deg, 
+        #0079d0 0%, 
+        #9e52d8 32%, 
+        #da365c 84%, 
+        #d04901 100%
+    );
+    
+    /* Kỹ thuật đổ màu vào chữ */
+    -webkit-background-clip: text; /* Cắt nền theo khung chữ */
+    background-clip: text;
+    -webkit-text-fill-color: transparent; /* Làm màu gốc của chữ trong suốt để hiện nền gradient */
+    
+    display: inline-block; /* Bắt buộc phải có để gradient hiển thị đúng */
+    padding-top: 24px;
+}
+
+.promo-card.promo-card--dark .diff__footnote {
+    color: #ffffff;
+    -webkit-text-stroke: 0.3px #ffffff;
+}
