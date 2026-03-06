@@ -1,0 +1,37 @@
+
+
+/* nền của trang */
+.over_creator{
+  background: #ffff;      /* hoặc trắng */
+  padding: 40px 0;          /* tạo khoảng trắng trên/dưới KHỐI ĐEN */
+}
+
+/* KHỐI ĐEN nằm giữa */
+.creator_studio{
+  background: #000;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 40px;            /* padding bên trong khối đen */
+}
+
+/* 2 cột */
+.bottom_box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.color_text{
+  color: #ffffff;
+  
+}
+.color_text1{
+  color: #2997ff;
+  
+}
+
+
+
