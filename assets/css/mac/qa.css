@@ -1,0 +1,45 @@
+
+.over_qa{
+  background-color: #ffffff;
+  padding: 50px 0;
+}
+
+
+.qa_inner{
+  border-top: 1px solid #d2d2d2;
+  max-width: 980px;  
+  margin: 0 auto;    
+  padding: 32px 0;    
+  text-align: left;
+}
+
+
+.text_in_box{
+    border-top: 1px solid #d2d2d2;
+    padding: 17px 0;
+}
+
+
+
+
+.bottom_qa{
+  background-color: #f5f5f7;   
+  padding: 20px 0;
+}
+
+
+.nd_text{
+  max-width: 980px;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #6e6e73;             
+  line-height: 1.4;
+}
+
+
+
+.nd_text p{
+  margin: 0 0 6px;
+}
+
+
