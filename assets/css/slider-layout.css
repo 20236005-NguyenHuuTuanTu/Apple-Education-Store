@@ -1,6 +1,8 @@
 /* Layout tổng cho cả vùng chứa */
 .card-section {
     padding: 40px 0;
+    max-width: 1200px;
+    margin: auto;
     font-family: var(--font);
 }
 
@@ -30,7 +32,8 @@
 .card {
     /* layout */
     flex: 0 0 auto;
-    width: 400px;
+    width: 95%;
+    max-width: 400px;
     height: 500px;
     border-radius: 18px;
     overflow: hidden;
@@ -81,3 +84,8 @@
 .slider-btn:disabled {
     display: none;
 }
+ @media screen and (max-width:832px) {
+    .card-section{
+        width: 90%;
+    }
+ }

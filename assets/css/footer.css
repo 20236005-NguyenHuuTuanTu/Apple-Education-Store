@@ -147,7 +147,7 @@
     display: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 832px) {
     .nav-row {
         display: block; 
         margin-top: 20px;
