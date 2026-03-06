@@ -1,47 +1,69 @@
-    .hero-banner{
-        padding-top: 50px;
-        width: 1200px;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-    }
+.hero-banner {
+  padding-top: 50px;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
 
-    .hero-banner .upper-banner{
-        display: flex;
-        justify-content: space-between;
-    }
+.hero-banner .upper-banner {
+  display: flex;
+  justify-content: space-between;
+}
 
-    .hero-banner .lower-banner ul{
-        display: flex;
-        list-style: none;
-        gap: 30px
-    }
+.hero-banner .lower-banner ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
 
-    .hero-banner .lower-banner img{
-        width: 100px;
-        height: 65px;
-    }
-    .hero-banner a {
-        display: flex;
-        flex-direction: column;
-    }
-    .hero-banner h1{
-        width: 600px;
-        color: #08827c;
-        font-size: 80px;
-        line-height: 1.1;
-    }
-    .hero-banner .right{
-        display: flex;
-        flex-direction: column;
-        width: 500px;
-        justify-content: center;
-        text-align: right;
-        align-items: flex-end;         
-        font-size: 20px;
-    }
+.hero-banner .lower-banner img {
+  width: 100px;
+  height: 65px;
+}
+.hero-banner a {
+  display: flex;
+  flex-direction: column;
+}
+.hero-banner h1 {
+  width: 600px;
+  color: #08827c;
+  font-size: 80px;
+  line-height: 1.1;
+}
+.hero-banner .right {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  justify-content: center;
+  text-align: right;
+  align-items: flex-end;
+  font-size: 20px;
+}
 
-    .hero-banner a {
-        text-decoration: none;
-    }
+.hero-banner a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 832px) {
+  .hero-banner .upper-banner {
+    display: block;
+  }
+  .hero-banner h1 {
+    width: 100%;
+    font-size: 48px;
+    line-height: 1.1;
+  }
+  .hero-banner .right {
+    width: 100%;
+    text-align: left;
+    align-items: start;
+  }
+  .hero-banner .lower-banner {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 20px;
+  }
+}

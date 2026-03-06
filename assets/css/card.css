@@ -116,3 +116,17 @@
     width: 12px;
     height: 12px;
 }
+
+@media screen and (max-width: 832px) {
+    .card__title {
+        font-size: 22px;
+    }
+
+    .card__heading{
+        font-size: 22px;
+    }
+
+    .card__description {
+        font-size: 15px;
+    }
+}
