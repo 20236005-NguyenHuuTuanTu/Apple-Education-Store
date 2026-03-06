@@ -31,12 +31,11 @@
             <div class="header-title">
                 <h2 class="title-personal-info">Thông tin cá nhân</h2>
                 <h2 class="title-address-info" hidden>Thông tin địa chỉ</h2>
-                <h2 class="title-cart-info" hidden>Thông tin đơn hàng</h2>
             </div>
         </header>
         <div class="dialog-body">
             <form>
-                <div class="personal-info" hidden>
+                <div class="personal-info">
                     <div class="info-item">
                         <label for="name">Họ và tên</label>
                         <input type="text" id="name" name="name" required>
@@ -93,8 +92,8 @@
                     </div>
 
                     <div class="info-item">
-                        <label for="commune">Phường/Xã/Thị trấn</label>
-                        <select name="commune-selection" id="commune-selection" class="" required>
+                        <label for="ward">Phường/Xã/Thị trấn</label>
+                        <select name="ward-selection" id="ward-selection" class="" required>
                             <option value="default" class="">Chọn phường/xã</option>
                         </select>
                     </div>
@@ -109,24 +108,22 @@
                         <input type="text" id="postal-code" name="postal-code">
                     </div>
                 </div>
-
-                
-
             </form>
         </div>
                 
         
-        <footer class="">
+        <footer class="dialog_footer">
             <button class="return">Quay lại</button>
             <button class="next">Tiếp theo</button>
             <button class="pay" hidden>Thanh toán</button>
         </footer>
     </dialog>
+
     <script>
+    document.addEventListener("DOMContentLoaded", () => {
         const openShopFormButton = document.getElementById('open-shop-form');
         const shopDialog = document.getElementById('shop-dialog');
         const closeDialogButton = document.getElementById('close-dialog');
-
         openShopFormButton.addEventListener('click', () => {
             shopDialog.showModal();
         });
@@ -135,32 +132,8 @@
             shopDialog.close();
         });
 
-        const returnButton = shopDialog.querySelector('.return');
-        const nextButton = shopDialog.querySelector('.next');
+    })
 
-        const personalInfoSection = shopDialog.querySelector('.personal-info');
-        const addressInfoSection = shopDialog.querySelector('.address-info');
-
-        returnButton.addEventListener('click', () => {
-            if(personalInfoSection){
-                personalInfoSection.hidden = false;
-                addressInfoSection.hidden = true;  
-            }
-            else if(addressInfoSection){
-                addressInfoSection.hidden = false;
-                personalInfoSection.hidden = true;
-            }
-        });
-
-        nextButton.addEventListener('click', () => {
-            if(personalInfoSection){
-                personalInfoSection.hidden = true;
-                addressInfoSection.hidden = false;  
-            }
-            else if(addressInfoSection){
-                addressInfoSection.hidden = true;
-                personalInfoSection.hidden = false;
-            }
-        });
+        
     </script>
 </body>
