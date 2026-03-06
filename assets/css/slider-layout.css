@@ -1,6 +1,8 @@
 /* Layout tổng cho cả vùng chứa */
 .card-section {
     padding: 40px 0;
+    max-width: 1200px;
+    margin: auto;
     font-family: var(--font);
 }
 
