@@ -151,3 +151,24 @@
     color: #ffffff;
     -webkit-text-stroke: 0.3px #ffffff;
 }
+
+@media screen and (max-width: 832px) {
+    .promo-card__text-group {
+        padding: 20px;
+    }
+
+    .promo-card__heading {
+        font-size: 22px; 
+        margin-bottom: 8px;
+    }
+
+    .promo-card__desc {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+    .promo-card--large {
+        width: 100% !important; 
+        max-width: 400px;
+    }
+}
