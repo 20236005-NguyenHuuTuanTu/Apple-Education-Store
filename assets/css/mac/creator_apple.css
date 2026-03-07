@@ -1,10 +1,7 @@
-
 .over_creator{
   background: #ffff;      
   padding: 40px 0;         
 }
-
-
 
 .creator_studio{
   background: #000;
@@ -12,8 +9,6 @@
   margin: 0 auto;
   padding: 40px;            
 }
-
-
 
 .bottom_box{
   display: flex;
@@ -31,4 +26,15 @@
 .color_text1{
   color: #2997ff;
  
+}
+
+@media screen and (max-width: 832px) {
+  .bottom_box {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .color_text, .color_text1 {
+    text-align: center;
+  }
 }

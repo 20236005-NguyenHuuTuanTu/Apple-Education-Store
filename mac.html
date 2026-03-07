@@ -10,6 +10,7 @@
   </title>
   <link rel="stylesheet" href="./assets/css/index.css" />
   <script src="./assets/js/index.js" defer></script>
+  <script src="./assets/js/witb.js" defer></script>
   <link rel="stylesheet" href="./assets/css/HeaderStyle.css" />
   <link rel="stylesheet" href="./assets/css/mac/productBox.css" />
   <link rel="stylesheet" href="./assets/css/mac/whatsBox.css" />
@@ -19,7 +20,11 @@
   <link rel="stylesheet" href="./assets/css/mac/creator_apple.css">
   <link rel="stylesheet" href="./assets/css/mac/qa.css">
   <link rel="stylesheet" href="./assets/css/mac/compare-section.css">
-
+  <link rel="stylesheet" href="./assets/css/mac/carouselProduct.css">
+  <script src="./assets/js/mac/carouselProduct.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="ipad-body">
@@ -191,7 +196,27 @@
   <div class="ProductSection">
     <div class="product-container">
       <div class="inner-wrap">
-        <div class="stickyImage">a</div>
+        <div class="stickyImage">
+          <div class="carousel-container">
+            <div class="carousel-track">
+              <div class="slide active"><img src="./assets/images/mac/ipad-pro-model-select-gallery-1-202405.webp"
+                  alt="iPad 1"></div>
+              <div class="slide"><img src="./assets/images/mac/ipad-pro-model-select-gallery-1-202405.webp"
+                  alt="iPad 2"></div>
+              <div class="slide"><img src="./assets/images/mac/ipad-pro-model-select-gallery-1-202405.webp"
+                  alt="iPad 3"></div>
+            </div>
+
+            <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+            <button class="pre-btn"><i class="fa-solid fa-chevron-left"></i></button>
+
+            <div class="carousel-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+        </div>
         <div class="productOptions">
           <div class="size block-wrap"></div>
           <div class="color block-wrap"></div>
@@ -288,29 +313,34 @@
 
 
   <h2 class="box_title">Trong hộp có gì</h2>
+  <div class="witb-wrapper">
+    <ul class="item_in_box">
+      <li>
+        <img loading="lazy" width="290" height="340"
+          alt="iPad Pro, Vỏ ngoài mặt sau, màu Đen Không Gian, logo Apple ở giữa, Hệ Thống Camera Chuyên Nghiệp"
+          src="assets/images/ipad-pro-11-witb-spaceblack-wifi-202405.jpeg" alt="iPad Pro">
+        <p class="text">iPad Pro</p>
+      </li>
 
-  <ul class="item_in_box">
-    <li>
-      <img loading="lazy" width="290" height="340"
-        alt="iPad Pro, Vỏ ngoài mặt sau, màu Đen Không Gian, logo Apple ở giữa, Hệ Thống Camera Chuyên Nghiệp"
-        src="assets/images/ipad-pro-11-witb-spaceblack-wifi-202405.jpeg" alt="iPad Pro">
+      <li>
+        <img | loading="lazy" width="83" height="340" alt="Cáp USB-C sang USB-C, thiết kế kiểu cáp bện, màu Đen"
+          src="assets/images/ipad-pro-witb-black-cable-202405.jpeg" alt="Cáp Sạc USB-C">
+        <p class="text">Cáp Sạc USB-C</p>
+      </li>
 
-      <p class="text">iPad Pro</p>
-    </li>
+      <li>
+        <img loading="lazy" width="155" height="340" alt="Bộ Tiếp Hợp Nguồn USB-C 20W, đầu cắm Type A, màu Trắng"
+          src="assets/images/ipad-pro-witb-adapter-202405_GEO_VN.jpeg" alt="Cáp Sạc USB-C">
+        <p class="text">Bộ Tiếp Hợp Nguồn USB-C 20W</p>
+      </li>
+    </ul>
 
-    <li>
-      <img | loading="lazy" width="83" height="340" alt="Cáp USB-C sang USB-C, thiết kế kiểu cáp bện, màu Đen"
-        src="assets/images/ipad-pro-witb-black-cable-202405.jpeg" alt="Cáp Sạc USB-C">
-      <p class="text">Cáp Sạc USB-C</p>
-    </li>
-
-    <li>
-      <img loading="lazy" width="155" height="340" alt="Bộ Tiếp Hợp Nguồn USB-C 20W, đầu cắm Type A, màu Trắng"
-        src="assets/images/ipad-pro-witb-adapter-202405_GEO_VN.jpeg" alt="Cáp Sạc USB-C">
-      <p class="text">Bộ Tiếp Hợp Nguồn USB-C 20W</p>
-    </li>
-  </ul>
-
+    <div class="witb-dots">
+      <span class="witb-dot active"></span>
+      <span class="witb-dot"></span>
+      <span class="witb-dot"></span>
+    </div>
+  </div>
 
   <!-- End What's in the box -->
 
@@ -349,247 +379,280 @@
 
   <!-- Compare-section -->
   <section class="compare">
-    <div class="compare__container"> 
-        <div class="compare__header"> 
-            <h2 class="compare__title">So sánh các phiên bản iPad</h2>
-            <a href="#" class="compare__link">Xem iPad nào phù hợp với bạn &gt;</a>
-        </div>
-        <div class="compare__grid"> 
-            <!-- Column 1 -->
-            <article class="compare__card">
-                <div class="compare__top"> 
-                    <img 
-                    src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-header-pro-202405?wid=392&amp;hei=398&amp;fmt=png-alpha&amp;.v=bk5Ha2llcUlIczRSRUt0WDVzK2I3aEpsdjhCN0cycWFLRklRalhsdmV1Y1k2Q3FubUg5cC93VlMzQkExanhMSzAzOVFHb3N0MkVmS01ZcFh0d1Y4R21yc3hpVFRmZnBDMzlsazg4c2M0Vk0" 
-                    alt="iPad Pro" class="compare__hero">
-                    <img 
-                    src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-swatches-pro-202410?wid=62&amp;hei=26&amp;fmt=png-alpha&amp;.v=VTllekV2RktMMEtYZm91K21zcE81YzlMaTNEK3FqdHk4VjVjd1laSDJPWmFWTUZXWmpVL0pSSHl0dEdINzRUVzAzOVFHb3N0MkVmS01ZcFh0d1Y4R3RKd3NvcEs3Z0t6VkdpY0VPb0dOUFE" 
-                    alt="Colors" class="compare__swatch">                  
-                    <span class="compare__badge"> </span>
-                    <h3 class="compare__name">
-                      <a href="#" class="compare__product-link">iPad Pro</a>
-                    </h3>
-                    <p class="compare__subtitle">Trải nghiệm iPad đỉnh cao với công nghệ tiên tiến.</p>
-                    <p class="compare__price">Từ 27.199.000đ</p>
-                </div>
+    <div class="compare__container">
+      <div class="compare__header">
+        <h2 class="compare__title">So sánh các phiên bản iPad</h2>
+        <a href="#" class="compare__link">Xem iPad nào phù hợp với bạn &gt;</a>
+      </div>
+      <div class="compare__grid">
+        <!-- Column 1 -->
+        <article class="compare__card">
+          <div class="compare__top">
+            <img
+              src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-header-pro-202405?wid=392&amp;hei=398&amp;fmt=png-alpha&amp;.v=bk5Ha2llcUlIczRSRUt0WDVzK2I3aEpsdjhCN0cycWFLRklRalhsdmV1Y1k2Q3FubUg5cC93VlMzQkExanhMSzAzOVFHb3N0MkVmS01ZcFh0d1Y4R21yc3hpVFRmZnBDMzlsazg4c2M0Vk0"
+              alt="iPad Pro" class="compare__hero">
+            <img
+              src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-swatches-pro-202410?wid=62&amp;hei=26&amp;fmt=png-alpha&amp;.v=VTllekV2RktMMEtYZm91K21zcE81YzlMaTNEK3FqdHk4VjVjd1laSDJPWmFWTUZXWmpVL0pSSHl0dEdINzRUVzAzOVFHb3N0MkVmS01ZcFh0d1Y4R3RKd3NvcEs3Z0t6VkdpY0VPb0dOUFE"
+              alt="Colors" class="compare__swatch">
+            <span class="compare__badge"> </span>
+            <h3 class="compare__name">
+              <a href="#" class="compare__product-link">iPad Pro</a>
+            </h3>
+            <p class="compare__subtitle">Trải nghiệm iPad đỉnh cao với công nghệ tiên tiến.</p>
+            <p class="compare__price">Từ 27.199.000đ</p>
+          </div>
 
-                <p class="compare__feature-headline">13” hoặc 11”</p>
-                <p class="compare__feature-text">Màn hình Ultra Retina XDR<sup class="compare__footnote">3</sup></p>
-                <p class="compare__feature-text">Công nghệ ProMotion</p>
-                <p class="compare__feature-text">Dải màu rộng P3</p>
-                <p class="compare__feature-text">True Tone</p>
-                <p class="compare__feature-text">Lớp phủ chống phản chiếu</p>
-                <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 20%;">Tùy chọn mặt kính cấu trúc nano trên bản 1TB hoặc2TB</p>
+          <p class="compare__feature-headline">13” hoặc 11”</p>
+          <p class="compare__feature-text">Màn hình Ultra Retina XDR<sup class="compare__footnote">3</sup></p>
+          <p class="compare__feature-text">Công nghệ ProMotion</p>
+          <p class="compare__feature-text">Dải màu rộng P3</p>
+          <p class="compare__feature-text">True Tone</p>
+          <p class="compare__feature-text">Lớp phủ chống phản chiếu</p>
+          <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 20%;">Tùy chọn mặt
+            kính cấu trúc nano trên bản 1TB hoặc2TB</p>
 
-                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-chip-m5-202510?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5SDkrbElXUzhnY1NhNFk3dUUvTEdTUTFNakRCVlEydlQ1SVd4NDl6RWdXRFM0TjRWdzF2UjRGVEY0c3dBQVZ6VGR0eExnTDVIQXQyWFNnRy9wOW95LzQ" 
-                alt="Chip M5" class="compare__feature-icon">
-                <p class="compare__feature-text">Chip M5</p>
+          <img
+            src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-chip-m5-202510?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5SDkrbElXUzhnY1NhNFk3dUUvTEdTUTFNakRCVlEydlQ1SVd4NDl6RWdXRFM0TjRWdzF2UjRGVEY0c3dBQVZ6VGR0eExnTDVIQXQyWFNnRy9wOW95LzQ"
+            alt="Chip M5" class="compare__feature-icon">
+          <p class="compare__feature-text">Chip M5</p>
 
-                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-ai-202410?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5UDBhWm1yR01nTElRQ0VINDZNUlEwMXhJZWIrUHhNcDhQM1N3WStxU1Z4RUoyZWdNMk9CcVkreUdEWkc5LzhTdnM2WGRuSlpXSTlHRHRESG9vZHVHcGc"
-                alt="AI" class="compare__feature-icon">
-                <p class="compare__feature-text">Apple Intelligence<sup class="compare__footnote">∆</sup></p>                
+          <img
+            src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-ai-202410?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5UDBhWm1yR01nTElRQ0VINDZNUlEwMXhJZWIrUHhNcDhQM1N3WStxU1Z4RUoyZWdNMk9CcVkreUdEWkc5LzhTdnM2WGRuSlpXSTlHRHRESG9vZHVHcGc"
+            alt="AI" class="compare__feature-icon">
+          <p class="compare__feature-text">Apple Intelligence<sup class="compare__footnote">∆</sup></p>
 
-                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-camera-pro-202405?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5SjQ5QnkrRFZEUlFRK3F0UFpvOVgyWEtoQVV1aks0VUlqL2lLbmk0elp2czNZYVExQ25DL2t0RlhMV3g1Sy9raDVJQldRNFRWSm9XOHNtMktucGVPNThLMC9IZENQRGlYSTRRdmhrVVdCTmg" 
-                alt="Camera" class="compare__feature-icon">
-                <p class="compare__feature-text">Camera Wide 12MP</p>
-                <p class="compare__feature-text">Video 4K, ProRes</p>
+          <img
+            src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-camera-pro-202405?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5SjQ5QnkrRFZEUlFRK3F0UFpvOVgyWEtoQVV1aks0VUlqL2lLbmk0elp2czNZYVExQ25DL2t0RlhMV3g1Sy9raDVJQldRNFRWSm9XOHNtMktucGVPNThLMC9IZENQRGlYSTRRdmhrVVdCTmg"
+            alt="Camera" class="compare__feature-icon">
+          <p class="compare__feature-text">Camera Wide 12MP</p>
+          <p class="compare__feature-text">Video 4K, ProRes</p>
 
-                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-front-cam-landscape-202405?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5TWNmNXRLSUFPUjB5Y3F3MW9xVG9oRFAzdjI3MllrRE1ON21GY0N2MUpVTlBuODBIWHl1WncyVWMrbFpIb1VOWGNlcC9qYU9xUXZmS1NmbGxtTVBCNU96QUw4R3R4TE9SK2N2My9OdWp4UTg"
-                alt="Camera" class="compare__feature-icon">
-                <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 20%;">Camera 12MP Center Stage trên cạnh ngang</p>
-                <p class="compare__feature-text">Hệ thống camera TrueDepth</p>
+          <img
+            src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-front-cam-landscape-202405?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5TWNmNXRLSUFPUjB5Y3F3MW9xVG9oRFAzdjI3MllrRE1ON21GY0N2MUpVTlBuODBIWHl1WncyVWMrbFpIb1VOWGNlcC9qYU9xUXZmS1NmbGxtTVBCNU96QUw4R3R4TE9SK2N2My9OdWp4UTg"
+            alt="Camera" class="compare__feature-icon">
+          <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 20%;">Camera 12MP
+            Center Stage trên cạnh ngang</p>
+          <p class="compare__feature-text">Hệ thống camera TrueDepth</p>
 
-                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-pencil-pro-202405?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5UGhXZlFwdmdLYlE4OGZ2eGpZRnJ2L0toQVV1aks0VUlqL2lLbmk0elp2czNZYVExQ25DL2t0RlhMV3g1Sy9raC84SXU0eit5WXNaRVpPTTB4ZmIzak9zc2VPRkY3bzB2TlBiNHV3Z2hzYkg"
-                alt="Camera" class="compare__feature-icon">
-                <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 25%;">Hỗ trợ Apple&nbsp;Pencil&nbsp;Pro</p>
-                <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 26%;">Hỗ trợ Apple&nbsp;Pencil<br>(USB-C)</p>
+          <img
+            src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-pencil-pro-202405?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5UGhXZlFwdmdLYlE4OGZ2eGpZRnJ2L0toQVV1aks0VUlqL2lLbmk0elp2czNZYVExQ25DL2t0RlhMV3g1Sy9raC84SXU0eit5WXNaRVpPTTB4ZmIzak9zc2VPRkY3bzB2TlBiNHV3Z2hzYkg"
+            alt="Camera" class="compare__feature-icon">
+          <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 25%;">Hỗ trợ
+            Apple&nbsp;Pencil&nbsp;Pro</p>
+          <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 26%;">Hỗ trợ
+            Apple&nbsp;Pencil<br>(USB-C)</p>
 
-                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-magickeyboard-m4-202405?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5QU9hb1JTcG1wYWJ0bXMveGxoeGduNDg3UUlCaTZYcmFnamhGeE1FSTBpOFU1VDA4SlZ3amhOZmJ6WlJkTGNiTE10S056YjJWbjhCUWltYmRjREp3QVp6YkNqWkx4alQvNkhVNDE3L0J0R3A"
-                alt="Camera" class="compare__feature-icon">
-                <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 25%;">Hỗ trợ Magic&nbsp;Keyboard cho iPad&nbsp;Pro</p>          
+          <img
+            src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-magickeyboard-m4-202405?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5QU9hb1JTcG1wYWJ0bXMveGxoeGduNDg3UUlCaTZYcmFnamhGeE1FSTBpOFU1VDA4SlZ3amhOZmJ6WlJkTGNiTE10S056YjJWbjhCUWltYmRjREp3QVp6YkNqWkx4alQvNkhVNDE3L0J0R3A"
+            alt="Camera" class="compare__feature-icon">
+          <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 25%;">Hỗ trợ
+            Magic&nbsp;Keyboard cho iPad&nbsp;Pro</p>
 
-            </article>
+        </article>
 
-            <!-- Column 2 -->
-            <article class="compare__card">
-                <div class="compare__top"> 
-                    <img 
-                    src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-header-air-202405?wid=392&amp;hei=398&amp;fmt=png-alpha&amp;.v=bk5Ha2llcUlIczRSRUt0WDVzK2I3aEp0T1lvbEU5VzVUeFMyYUl3ZjA1RVk2Q3FubUg5cC93VlMzQkExanhMSzAzOVFHb3N0MkVmS01ZcFh0d1Y4R2hvR0JUOE5DanRnclpMbkNkbll4VFE"                    
-                    alt="iPad Pro" class="compare__hero">
-                    <img 
-                    src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-swatches-air-202410?wid=134&amp;hei=26&amp;fmt=png-alpha&amp;.v=VTllekV2RktMMEtYZm91K21zcE81ZklpTlQzZFhQVGE0SXN5TXVVd0tsTStqNVNMUE5kWkM0SlBMVUVFRW5rM215d1FhSDJ0bkR0ZGZtUjZJNmFveFlubjdwNjI2STBFYk5icVZWN1RpamM"
-                    alt="Colors" class="compare__swatch" style="width: 67px !important; height: 13px !important;">                  
-                    <span class="compare__badge">Mới</span>
-                    <h3 class="compare__name">
-                      <a href="#" class="compare__product-link">iPad Air</a>
-                    </h3>
-                    <p class="compare__subtitle compare__feature-content--narrow" style="--padding-percent: 5%;">
-                      Hiệu năng mạnh mẽ trong một thiết kế mỏng nhẹ.
-                    </p>
-                    <p class="compare__price">Từ 15.289.000đ</p>
-                </div>
+        <!-- Column 2 -->
+        <article class="compare__card">
+          <div class="compare__top">
+            <img
+              src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-header-air-202405?wid=392&amp;hei=398&amp;fmt=png-alpha&amp;.v=bk5Ha2llcUlIczRSRUt0WDVzK2I3aEp0T1lvbEU5VzVUeFMyYUl3ZjA1RVk2Q3FubUg5cC93VlMzQkExanhMSzAzOVFHb3N0MkVmS01ZcFh0d1Y4R2hvR0JUOE5DanRnclpMbkNkbll4VFE"
+              alt="iPad Pro" class="compare__hero">
+            <img
+              src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-swatches-air-202410?wid=134&amp;hei=26&amp;fmt=png-alpha&amp;.v=VTllekV2RktMMEtYZm91K21zcE81ZklpTlQzZFhQVGE0SXN5TXVVd0tsTStqNVNMUE5kWkM0SlBMVUVFRW5rM215d1FhSDJ0bkR0ZGZtUjZJNmFveFlubjdwNjI2STBFYk5icVZWN1RpamM"
+              alt="Colors" class="compare__swatch" style="width: 67px !important; height: 13px !important;">
+            <span class="compare__badge">Mới</span>
+            <h3 class="compare__name">
+              <a href="#" class="compare__product-link">iPad Air</a>
+            </h3>
+            <p class="compare__subtitle compare__feature-content--narrow" style="--padding-percent: 5%;">
+              Hiệu năng mạnh mẽ trong một thiết kế mỏng nhẹ.
+            </p>
+            <p class="compare__price">Từ 15.289.000đ</p>
+          </div>
 
-                <p class="compare__feature-headline">13” hoặc 11”</p>
-                <p class="compare__feature-text">Màn hình Liquid Retina<sup class="compare__footnote">3</sup></p>
-                <p class="compare__feature-text">—</p>
-                <p class="compare__feature-text">Dải màu rộng P3</p>
-                <p class="compare__feature-text">True Tone</p>
-                <p class="compare__feature-text">Lớp phủ chống phản chiếu</p>
-                <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 20%;" >—</p>
+          <p class="compare__feature-headline">13” hoặc 11”</p>
+          <p class="compare__feature-text">Màn hình Liquid Retina<sup class="compare__footnote">3</sup></p>
+          <p class="compare__feature-text">—</p>
+          <p class="compare__feature-text">Dải màu rộng P3</p>
+          <p class="compare__feature-text">True Tone</p>
+          <p class="compare__feature-text">Lớp phủ chống phản chiếu</p>
+          <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 20%;">—</p>
 
-                <img 
-                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-chip-m4-202603?wid=112&hei=112&fmt=png-alpha&.v=Sm93a0RRY2htdlZqejRLMVV1WXl5TW1SVmluUFJrN0JwZ2Jtb0pwdHpodzFNakRCVlEydlQ1SVd4NDl6RWdXRFM0TjRWdzF2UjRGVEY0c3dBQVZ6VFR3Tnl5dHVuOG1VNWh5Q1VGRVRiRlk"                
-                alt="Chip M5" class="compare__feature-icon">
-                <p class="compare__feature-text">Chip M4</p>
+          <img
+            src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-chip-m4-202603?wid=112&hei=112&fmt=png-alpha&.v=Sm93a0RRY2htdlZqejRLMVV1WXl5TW1SVmluUFJrN0JwZ2Jtb0pwdHpodzFNakRCVlEydlQ1SVd4NDl6RWdXRFM0TjRWdzF2UjRGVEY0c3dBQVZ6VFR3Tnl5dHVuOG1VNWh5Q1VGRVRiRlk"
+            alt="Chip M5" class="compare__feature-icon">
+          <p class="compare__feature-text">Chip M4</p>
 
-                <img 
-                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-ai-202410?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5UDBhWm1yR01nTElRQ0VINDZNUlEwMXhJZWIrUHhNcDhQM1N3WStxU1Z4RUoyZWdNMk9CcVkreUdEWkc5LzhTdnM2WGRuSlpXSTlHRHRESG9vZHVHcGc"
-                alt="AI" class="compare__feature-icon">
-                <p class="compare__feature-text">Apple Intelligence<sup class="compare__footnote">∆</sup></p>                
+          <img
+            src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-ai-202410?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5UDBhWm1yR01nTElRQ0VINDZNUlEwMXhJZWIrUHhNcDhQM1N3WStxU1Z4RUoyZWdNMk9CcVkreUdEWkc5LzhTdnM2WGRuSlpXSTlHRHRESG9vZHVHcGc"
+            alt="AI" class="compare__feature-icon">
+          <p class="compare__feature-text">Apple Intelligence<sup class="compare__footnote">∆</sup></p>
 
-                <img 
-                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-camera-air-202405?wid=112&hei=112&fmt=png-alpha&.v=Sm93a0RRY2htdlZqejRLMVV1WXl5T3RmQkh3ektWbTZXak5nd3FnU2N4N0toQVV1aks0VUlqL2lLbmk0elp2czNZYVExQ25DL2t0RlhMV3g1Sy9raC84SXU0eit5WXNaRVpPTTB4ZmIzalArdkJKSWxUUU5CSDlldHlFL0dpQXc"                
-                alt="Camera" class="compare__feature-icon">
-                <p class="compare__feature-text">Camera Wide 12MP</p>
-                <p class="compare__feature-text">Video 4K, ProRes</p>
+          <img
+            src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-camera-air-202405?wid=112&hei=112&fmt=png-alpha&.v=Sm93a0RRY2htdlZqejRLMVV1WXl5T3RmQkh3ektWbTZXak5nd3FnU2N4N0toQVV1aks0VUlqL2lLbmk0elp2czNZYVExQ25DL2t0RlhMV3g1Sy9raC84SXU0eit5WXNaRVpPTTB4ZmIzalArdkJKSWxUUU5CSDlldHlFL0dpQXc"
+            alt="Camera" class="compare__feature-icon">
+          <p class="compare__feature-text">Camera Wide 12MP</p>
+          <p class="compare__feature-text">Video 4K, ProRes</p>
 
-                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-front-cam-landscape-202405?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5TWNmNXRLSUFPUjB5Y3F3MW9xVG9oRFAzdjI3MllrRE1ON21GY0N2MUpVTlBuODBIWHl1WncyVWMrbFpIb1VOWGNlcC9qYU9xUXZmS1NmbGxtTVBCNU96QUw4R3R4TE9SK2N2My9OdWp4UTg"
-                alt="Camera" class="compare__feature-icon">
-                <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 20%;">Camera 12MP Center Stage trên cạnh ngang</p>
-                <p class="compare__feature-text">—</p>
+          <img
+            src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-front-cam-landscape-202405?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5TWNmNXRLSUFPUjB5Y3F3MW9xVG9oRFAzdjI3MllrRE1ON21GY0N2MUpVTlBuODBIWHl1WncyVWMrbFpIb1VOWGNlcC9qYU9xUXZmS1NmbGxtTVBCNU96QUw4R3R4TE9SK2N2My9OdWp4UTg"
+            alt="Camera" class="compare__feature-icon">
+          <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 20%;">Camera 12MP
+            Center Stage trên cạnh ngang</p>
+          <p class="compare__feature-text">—</p>
 
-                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-pencil-pro-202405?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5UGhXZlFwdmdLYlE4OGZ2eGpZRnJ2L0toQVV1aks0VUlqL2lLbmk0elp2czNZYVExQ25DL2t0RlhMV3g1Sy9raC84SXU0eit5WXNaRVpPTTB4ZmIzak9zc2VPRkY3bzB2TlBiNHV3Z2hzYkg"
-                alt="Camera" class="compare__feature-icon">
-                <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 25%;">Hỗ trợ Apple&nbsp;Pencil&nbsp;Pro</p>
-                <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 26%;">Hỗ trợ Apple&nbsp;Pencil<br>(USB-C)</p>
+          <img
+            src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-pencil-pro-202405?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5UGhXZlFwdmdLYlE4OGZ2eGpZRnJ2L0toQVV1aks0VUlqL2lLbmk0elp2czNZYVExQ25DL2t0RlhMV3g1Sy9raC84SXU0eit5WXNaRVpPTTB4ZmIzak9zc2VPRkY3bzB2TlBiNHV3Z2hzYkg"
+            alt="Camera" class="compare__feature-icon">
+          <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 25%;">Hỗ trợ
+            Apple&nbsp;Pencil&nbsp;Pro</p>
+          <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 26%;">Hỗ trợ
+            Apple&nbsp;Pencil<br>(USB-C)</p>
 
-                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-magickeyboard-m4-202405?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5QU9hb1JTcG1wYWJ0bXMveGxoeGduNDg3UUlCaTZYcmFnamhGeE1FSTBpOFU1VDA4SlZ3amhOZmJ6WlJkTGNiTE10S056YjJWbjhCUWltYmRjREp3QVp6YkNqWkx4alQvNkhVNDE3L0J0R3A"
-                alt="Camera" class="compare__feature-icon">
-                <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 25%;">Hỗ trợ Magic&nbsp;Keyboard cho iPad&nbsp;Pro</p>          
+          <img
+            src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-magickeyboard-m4-202405?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5QU9hb1JTcG1wYWJ0bXMveGxoeGduNDg3UUlCaTZYcmFnamhGeE1FSTBpOFU1VDA4SlZ3amhOZmJ6WlJkTGNiTE10S056YjJWbjhCUWltYmRjREp3QVp6YkNqWkx4alQvNkhVNDE3L0J0R3A"
+            alt="Camera" class="compare__feature-icon">
+          <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 25%;">Hỗ trợ
+            Magic&nbsp;Keyboard cho iPad&nbsp;Pro</p>
 
-            </article>
+        </article>
 
-            <!-- Column 3 -->
-            <article class="compare__card">
-                <div class="compare__top"> 
-                    <img 
-                    src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-header-202405?wid=392&hei=398&fmt=png-alpha&.v=bk5Ha2llcUlIczRSRUt0WDVzK2I3a3d5S3MwalZ0KzJYUzlaTEovR3lnM0JzNjk4alZXc1V3QlppSlJEdDY5eVJmWkRLbnF4V0o4MC80MUErK0tHaS82WXdLZXN4NXdtV2c5K0Z4cHFIU0E"                      
-                    alt="iPad Pro" class="compare__hero">
-                    <img 
-                    src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-swatches-gen10-202410?wid=134&hei=26&fmt=png-alpha&.v=VTllekV2RktMMEtYZm91K21zcE81WldTZ01FUzgydWdPK1dDTkxyNytTTStraHdEZ2VXTzRDSkZXWUJuM0tRZlZjUGxaZ2kzUjFwZGVzZThSeTdBdTRhU0FMNkVWZUtodWFPQXNaS01OQ1orYWpGdS9XeFgvbS9ITnNYOEhYaG4"                    
-                    alt="Colors" class="compare__swatch" style="width: 67px !important; height: 13px !important;">                  
-                    <span class="compare__badge"> </span>
-                    <h3 class="compare__name">
-                      <a href="#" class="compare__product-link">iPad</a>
-                    </h3>
-                    <p class="compare__subtitle compare__feature-content--narrow" style="--padding-percent: 10%;"> iPad màn hình toàn phần, đầy màu sắc. Cho mọi tác vụ hàng ngày.</p>
-                    <p class="compare__price">Từ 9.257.000đ</p>
-                </div>
+        <!-- Column 3 -->
+        <article class="compare__card">
+          <div class="compare__top">
+            <img
+              src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-header-202405?wid=392&hei=398&fmt=png-alpha&.v=bk5Ha2llcUlIczRSRUt0WDVzK2I3a3d5S3MwalZ0KzJYUzlaTEovR3lnM0JzNjk4alZXc1V3QlppSlJEdDY5eVJmWkRLbnF4V0o4MC80MUErK0tHaS82WXdLZXN4NXdtV2c5K0Z4cHFIU0E"
+              alt="iPad Pro" class="compare__hero">
+            <img
+              src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-swatches-gen10-202410?wid=134&hei=26&fmt=png-alpha&.v=VTllekV2RktMMEtYZm91K21zcE81WldTZ01FUzgydWdPK1dDTkxyNytTTStraHdEZ2VXTzRDSkZXWUJuM0tRZlZjUGxaZ2kzUjFwZGVzZThSeTdBdTRhU0FMNkVWZUtodWFPQXNaS01OQ1orYWpGdS9XeFgvbS9ITnNYOEhYaG4"
+              alt="Colors" class="compare__swatch" style="width: 67px !important; height: 13px !important;">
+            <span class="compare__badge"> </span>
+            <h3 class="compare__name">
+              <a href="#" class="compare__product-link">iPad</a>
+            </h3>
+            <p class="compare__subtitle compare__feature-content--narrow" style="--padding-percent: 10%;"> iPad màn hình
+              toàn phần, đầy màu sắc. Cho mọi tác vụ hàng ngày.</p>
+            <p class="compare__price">Từ 9.257.000đ</p>
+          </div>
 
-                <p class="compare__feature-headline">11”</p>
-                <p class="compare__feature-text">Màn hình Liquid Retina Chú thích <sup class="compare__footnote">3</sup></p>
-                <p class="compare__feature-text">—</p>
-                <p class="compare__feature-text">Màu sRGB</p>
-                <p class="compare__feature-text">True Tone</p>
-                <p class="compare__feature-text">—</p>
-                <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 20%;">—</p>
+          <p class="compare__feature-headline">11”</p>
+          <p class="compare__feature-text">Màn hình Liquid Retina Chú thích <sup class="compare__footnote">3</sup></p>
+          <p class="compare__feature-text">—</p>
+          <p class="compare__feature-text">Màu sRGB</p>
+          <p class="compare__feature-text">True Tone</p>
+          <p class="compare__feature-text">—</p>
+          <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 20%;">—</p>
 
-                <img 
-                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-chip-a16-202503?wid=112&hei=112&fmt=png-alpha&.v=Sm93a0RRY2htdlZqejRLMVV1WXl5SjhxbnUvNU16bGNiMEViZ0J4ODB1dWh6VHJWWWNSdjhEcTVRejFjc0s0WnAxemF2anFla0E2R0xKdlltYU9XUTJZZnNLdzJCcW45TnVBRVorMndNdTUrYWpGdS9XeFgvbS9ITnNYOEhYaG4"                
-                alt="Chip M5" class="compare__feature-icon">
-                <p class="compare__feature-text">Chip A16</p>
+          <img
+            src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-chip-a16-202503?wid=112&hei=112&fmt=png-alpha&.v=Sm93a0RRY2htdlZqejRLMVV1WXl5SjhxbnUvNU16bGNiMEViZ0J4ODB1dWh6VHJWWWNSdjhEcTVRejFjc0s0WnAxemF2anFla0E2R0xKdlltYU9XUTJZZnNLdzJCcW45TnVBRVorMndNdTUrYWpGdS9XeFgvbS9ITnNYOEhYaG4"
+            alt="Chip M5" class="compare__feature-icon">
+          <p class="compare__feature-text">Chip A16</p>
 
-                <p class="compare__feature-text">—</p>
-                
-                <p class="compare__feature-text"> </p>                
+          <p class="compare__feature-text">—</p>
 
-                <img 
-                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-camera-gen10-202405?wid=112&hei=112&fmt=png-alpha&.v=Sm93a0RRY2htdlZqejRLMVV1WXl5QXlRSUNvMEdPS29zYVVUSVlzTGZLMWNaVERDTytxZTJkUzkzOWk4M2lhRTBRdTczMW1abGJyM04rUWo3dVRvcEVTQzF5MThTSEY1c25CSVVRZ0QzT3ZiSmNzUzdYbFBqT2k4ejE4Nk50Q2w"                
-                alt="Camera" class="compare__feature-icon">
-                <p class="compare__feature-text">Camera Wide 12MP</p>
-                <p class="compare__feature-text">Video 4K</p>
+          <p class="compare__feature-text"> </p>
 
-                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-front-cam-landscape-202405?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5TWNmNXRLSUFPUjB5Y3F3MW9xVG9oRFAzdjI3MllrRE1ON21GY0N2MUpVTlBuODBIWHl1WncyVWMrbFpIb1VOWGNlcC9qYU9xUXZmS1NmbGxtTVBCNU96QUw4R3R4TE9SK2N2My9OdWp4UTg"
-                alt="Camera" class="compare__feature-icon">
-                <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 20%;">Camera 12MP Center Stage trên cạnh ngang</p>
-                <p class="compare__feature-text">—</p>
+          <img
+            src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-camera-gen10-202405?wid=112&hei=112&fmt=png-alpha&.v=Sm93a0RRY2htdlZqejRLMVV1WXl5QXlRSUNvMEdPS29zYVVUSVlzTGZLMWNaVERDTytxZTJkUzkzOWk4M2lhRTBRdTczMW1abGJyM04rUWo3dVRvcEVTQzF5MThTSEY1c25CSVVRZ0QzT3ZiSmNzUzdYbFBqT2k4ejE4Nk50Q2w"
+            alt="Camera" class="compare__feature-icon">
+          <p class="compare__feature-text">Camera Wide 12MP</p>
+          <p class="compare__feature-text">Video 4K</p>
 
-                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-pencil-pro-202405?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5UGhXZlFwdmdLYlE4OGZ2eGpZRnJ2L0toQVV1aks0VUlqL2lLbmk0elp2czNZYVExQ25DL2t0RlhMV3g1Sy9raC84SXU0eit5WXNaRVpPTTB4ZmIzak9zc2VPRkY3bzB2TlBiNHV3Z2hzYkg"
-                alt="Camera" class="compare__feature-icon">
-                <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 25%;">Hỗ trợ Apple&nbsp;Pencil<br>(USB-C)</p>
-                <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 26%;">Hỗ trợ Apple&nbsp;Pencil<br>(thế hệ thứ&nbsp;1)<sup class="compare__footnote">4</sup></p>
+          <img
+            src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-front-cam-landscape-202405?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5TWNmNXRLSUFPUjB5Y3F3MW9xVG9oRFAzdjI3MllrRE1ON21GY0N2MUpVTlBuODBIWHl1WncyVWMrbFpIb1VOWGNlcC9qYU9xUXZmS1NmbGxtTVBCNU96QUw4R3R4TE9SK2N2My9OdWp4UTg"
+            alt="Camera" class="compare__feature-icon">
+          <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 20%;">Camera 12MP
+            Center Stage trên cạnh ngang</p>
+          <p class="compare__feature-text">—</p>
 
-                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-magickeyboard-m4-202405?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5QU9hb1JTcG1wYWJ0bXMveGxoeGduNDg3UUlCaTZYcmFnamhGeE1FSTBpOFU1VDA4SlZ3amhOZmJ6WlJkTGNiTE10S056YjJWbjhCUWltYmRjREp3QVp6YkNqWkx4alQvNkhVNDE3L0J0R3A"
-                alt="Camera" class="compare__feature-icon">
-                <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 15%;">Hỗ trợ Magic Keyboard Folio</p>          
+          <img
+            src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-pencil-pro-202405?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5UGhXZlFwdmdLYlE4OGZ2eGpZRnJ2L0toQVV1aks0VUlqL2lLbmk0elp2czNZYVExQ25DL2t0RlhMV3g1Sy9raC84SXU0eit5WXNaRVpPTTB4ZmIzak9zc2VPRkY3bzB2TlBiNHV3Z2hzYkg"
+            alt="Camera" class="compare__feature-icon">
+          <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 25%;">Hỗ trợ
+            Apple&nbsp;Pencil<br>(USB-C)</p>
+          <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 26%;">Hỗ trợ
+            Apple&nbsp;Pencil<br>(thế hệ thứ&nbsp;1)<sup class="compare__footnote">4</sup></p>
 
-            </article>
-            
-            <!-- Column 4 -->
-            <article class="compare__card">
-                <div class="compare__top"> 
-                    <img 
-                    src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-header-mini-202410?wid=392&hei=398&fmt=png-alpha&.v=bk5Ha2llcUlIczRSRUt0WDVzK2I3c04vK0oyZitPeVVabFo4Uk42WnozYmV3dlpHNHJuUVlvci9PTGsyUVRENW15d1FhSDJ0bkR0ZGZtUjZJNmFveGRWWTR2SnZHTE1hOW4rRktudXVmU1U"                    
-                    alt="iPad Pro" class="compare__hero">
-                    <img 
-                    src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-swatches-mini-202410?wid=134&hei=26&fmt=png-alpha&.v=VTllekV2RktMMEtYZm91K21zcE81ZlZCY3hleE9UakpaeXJZbC80WEtjc2tlYVFuRUxVVG44Z3BweElqZTJNOFM0TjRWdzF2UjRGVEY0c3dBQVZ6VGVCM21qZ3d1cGJZQVpyY2wySTd6eDA"                      
-                    alt="Colors" class="compare__swatch" style="width: 67px !important; height: 13px !important;">                  
-                    <span class="compare__badge"> </span>
-                    <h3 class="compare__name">
-                      <a href="#" class="compare__product-link">iPad Mini</a>
-                    </h3>
-                    <p class="compare__subtitle compare__feature-content--narrow" style="--padding-percent: 12%;"> Trải nghiệm trọn vẹn iPad trong một thiết kế siêu&nbsp;gọn&nbsp;nhẹ.</p>
-                    <p class="compare__price">Từ 12.344.000đ</p>
-                </div>
+          <img
+            src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-magickeyboard-m4-202405?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5QU9hb1JTcG1wYWJ0bXMveGxoeGduNDg3UUlCaTZYcmFnamhGeE1FSTBpOFU1VDA4SlZ3amhOZmJ6WlJkTGNiTE10S056YjJWbjhCUWltYmRjREp3QVp6YkNqWkx4alQvNkhVNDE3L0J0R3A"
+            alt="Camera" class="compare__feature-icon">
+          <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 15%;">Hỗ trợ Magic
+            Keyboard Folio</p>
 
-                <p class="compare__feature-headline">8,3”</p>
-                <p class="compare__feature-text">Màn hình Liquid Retina<sup class="compare__footnote">3</sup></p>
-                <p class="compare__feature-text">—</p>
-                <p class="compare__feature-text">Dải màu rộng P3</p>
-                <p class="compare__feature-text">True Tone</p>
-                <p class="compare__feature-text">Lớp phủ chống phản chiếu</p>
-                <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 20%;">—</p>
+        </article>
 
-                <img 
-                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-chip-a17pro-202410?wid=112&hei=112&fmt=png-alpha&.v=Sm93a0RRY2htdlZqejRLMVV1WXl5Q3p4a2EweUczZWFPT3kxLzBtNUFQc2plZFExTndpSHpsVkt3NGQ3cng4dTFMRG15T2dlbW5penVSU2g2a1ZZK2VESVNORFFMSWlHeTZOaU9lazkvM3JUQUt1dW8rQjd6RlBTV0o3SElkVjE"                
-                alt="Chip M5" class="compare__feature-icon">
-                <p class="compare__feature-text">Chip A17 Pro</p>
+        <!-- Column 4 -->
+        <article class="compare__card">
+          <div class="compare__top">
+            <img
+              src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-header-mini-202410?wid=392&hei=398&fmt=png-alpha&.v=bk5Ha2llcUlIczRSRUt0WDVzK2I3c04vK0oyZitPeVVabFo4Uk42WnozYmV3dlpHNHJuUVlvci9PTGsyUVRENW15d1FhSDJ0bkR0ZGZtUjZJNmFveGRWWTR2SnZHTE1hOW4rRktudXVmU1U"
+              alt="iPad Pro" class="compare__hero">
+            <img
+              src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-swatches-mini-202410?wid=134&hei=26&fmt=png-alpha&.v=VTllekV2RktMMEtYZm91K21zcE81ZlZCY3hleE9UakpaeXJZbC80WEtjc2tlYVFuRUxVVG44Z3BweElqZTJNOFM0TjRWdzF2UjRGVEY0c3dBQVZ6VGVCM21qZ3d1cGJZQVpyY2wySTd6eDA"
+              alt="Colors" class="compare__swatch" style="width: 67px !important; height: 13px !important;">
+            <span class="compare__badge"> </span>
+            <h3 class="compare__name">
+              <a href="#" class="compare__product-link">iPad Mini</a>
+            </h3>
+            <p class="compare__subtitle compare__feature-content--narrow" style="--padding-percent: 12%;"> Trải nghiệm
+              trọn vẹn iPad trong một thiết kế siêu&nbsp;gọn&nbsp;nhẹ.</p>
+            <p class="compare__price">Từ 12.344.000đ</p>
+          </div>
 
-                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-ai-202410?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5UDBhWm1yR01nTElRQ0VINDZNUlEwMXhJZWIrUHhNcDhQM1N3WStxU1Z4RUoyZWdNMk9CcVkreUdEWkc5LzhTdnM2WGRuSlpXSTlHRHRESG9vZHVHcGc"
-                alt="AI" class="compare__feature-icon">
-                <p class="compare__feature-text">Apple Intelligence<sup class="compare__footnote">∆</sup></p>                
+          <p class="compare__feature-headline">8,3”</p>
+          <p class="compare__feature-text">Màn hình Liquid Retina<sup class="compare__footnote">3</sup></p>
+          <p class="compare__feature-text">—</p>
+          <p class="compare__feature-text">Dải màu rộng P3</p>
+          <p class="compare__feature-text">True Tone</p>
+          <p class="compare__feature-text">Lớp phủ chống phản chiếu</p>
+          <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 20%;">—</p>
 
-                <img 
-                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-camera-mini-202405?wid=112&hei=112&fmt=png-alpha&.v=Sm93a0RRY2htdlZqejRLMVV1WXl5T2xhaGs2cE9tazVvcVk2OHZCV3hEMmZ5OHNrTzh6U0lzWE1mRHZWOG9sTDFMRG15T2dlbW5penVSU2g2a1ZZK2ZKTlhLNjdVSDZFWHBBYjQzUXJQMGVjMjlVY0l1R3ArenAzSUxNRFZhcXY"                
-                alt="Camera" class="compare__feature-icon">
-                <p class="compare__feature-text">Camera Wide 12MP</p>
-                <p class="compare__feature-text">Video 4K</p>
+          <img
+            src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-chip-a17pro-202410?wid=112&hei=112&fmt=png-alpha&.v=Sm93a0RRY2htdlZqejRLMVV1WXl5Q3p4a2EweUczZWFPT3kxLzBtNUFQc2plZFExTndpSHpsVkt3NGQ3cng4dTFMRG15T2dlbW5penVSU2g2a1ZZK2VESVNORFFMSWlHeTZOaU9lazkvM3JUQUt1dW8rQjd6RlBTV0o3SElkVjE"
+            alt="Chip M5" class="compare__feature-icon">
+          <p class="compare__feature-text">Chip A17 Pro</p>
 
-                <img 
-                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-front-cam-top-202405?wid=112&hei=112&fmt=png-alpha&.v=Sm93a0RRY2htdlZqejRLMVV1WXl5RU9yMnBZOWVLUmR5QmVqL2dYVVAwM2pTTDlMTnJUaDZ1MHFYYVZYcUpwQnZzcXRxYStDSEk5YWVwNktDbmJtZ3Myem5Ic1BjMFVpRlhVd3dOQUFwTkRRbDN0NXM2NkpMWXdxU2FrSTFScHE"                
-                alt="Camera" class="compare__feature-icon">
-                <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 28%;">Camera 12MP Center Stage</p>
-                <p class="compare__feature-text">—</p>
+          <img
+            src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-ai-202410?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5UDBhWm1yR01nTElRQ0VINDZNUlEwMXhJZWIrUHhNcDhQM1N3WStxU1Z4RUoyZWdNMk9CcVkreUdEWkc5LzhTdnM2WGRuSlpXSTlHRHRESG9vZHVHcGc"
+            alt="AI" class="compare__feature-icon">
+          <p class="compare__feature-text">Apple Intelligence<sup class="compare__footnote">∆</sup></p>
 
-                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-pencil-pro-202405?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5UGhXZlFwdmdLYlE4OGZ2eGpZRnJ2L0toQVV1aks0VUlqL2lLbmk0elp2czNZYVExQ25DL2t0RlhMV3g1Sy9raC84SXU0eit5WXNaRVpPTTB4ZmIzak9zc2VPRkY3bzB2TlBiNHV3Z2hzYkg"
-                alt="Camera" class="compare__feature-icon">
-                <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 25%;">Hỗ trợ Apple&nbsp;Pencil&nbsp;Pro</p>
-                <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 26%;">Hỗ trợ Apple&nbsp;Pencil<br>(USB-C)</p>
+          <img
+            src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-camera-mini-202405?wid=112&hei=112&fmt=png-alpha&.v=Sm93a0RRY2htdlZqejRLMVV1WXl5T2xhaGs2cE9tazVvcVk2OHZCV3hEMmZ5OHNrTzh6U0lzWE1mRHZWOG9sTDFMRG15T2dlbW5penVSU2g2a1ZZK2ZKTlhLNjdVSDZFWHBBYjQzUXJQMGVjMjlVY0l1R3ArenAzSUxNRFZhcXY"
+            alt="Camera" class="compare__feature-icon">
+          <p class="compare__feature-text">Camera Wide 12MP</p>
+          <p class="compare__feature-text">Video 4K</p>
 
-                <img 
-                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-keyboard-bluetooth-202405?wid=112&hei=112&fmt=png-alpha&.v=Sm93a0RRY2htdlZqejRLMVV1WXl5T3FXenMzV0lNaUt3OG91UmYvVmtlM0J4QjVUZytUa3RyeHI0ZGZZVVRocWNTSG0vajhUS2ZEOTBzR1Bxa2xjUkwyMzdweHIwaVE0YUQ1RTJvZzV1RHJiM1h4UWc1ME5DNHNyVkFtTGdtSUc"                
-                alt="Camera" class="compare__feature-icon">
-                <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 10%;">Hỗ trợ bàn phím Bluetooth</p>          
+          <img
+            src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-front-cam-top-202405?wid=112&hei=112&fmt=png-alpha&.v=Sm93a0RRY2htdlZqejRLMVV1WXl5RU9yMnBZOWVLUmR5QmVqL2dYVVAwM2pTTDlMTnJUaDZ1MHFYYVZYcUpwQnZzcXRxYStDSEk5YWVwNktDbmJtZ3Myem5Ic1BjMFVpRlhVd3dOQUFwTkRRbDN0NXM2NkpMWXdxU2FrSTFScHE"
+            alt="Camera" class="compare__feature-icon">
+          <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 28%;">Camera 12MP
+            Center Stage</p>
+          <p class="compare__feature-text">—</p>
 
-            </article>
+          <img
+            src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-pencil-pro-202405?wid=112&amp;hei=112&amp;fmt=png-alpha&amp;.v=Sm93a0RRY2htdlZqejRLMVV1WXl5UGhXZlFwdmdLYlE4OGZ2eGpZRnJ2L0toQVV1aks0VUlqL2lLbmk0elp2czNZYVExQ25DL2t0RlhMV3g1Sy9raC84SXU0eit5WXNaRVpPTTB4ZmIzak9zc2VPRkY3bzB2TlBiNHV3Z2hzYkg"
+            alt="Camera" class="compare__feature-icon">
+          <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 25%;">Hỗ trợ
+            Apple&nbsp;Pencil&nbsp;Pro</p>
+          <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 26%;">Hỗ trợ
+            Apple&nbsp;Pencil<br>(USB-C)</p>
 
-        </div>   
+          <img
+            src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-compare-icon-keyboard-bluetooth-202405?wid=112&hei=112&fmt=png-alpha&.v=Sm93a0RRY2htdlZqejRLMVV1WXl5T3FXenMzV0lNaUt3OG91UmYvVmtlM0J4QjVUZytUa3RyeHI0ZGZZVVRocWNTSG0vajhUS2ZEOTBzR1Bxa2xjUkwyMzdweHIwaVE0YUQ1RTJvZzV1RHJiM1h4UWc1ME5DNHNyVkFtTGdtSUc"
+            alt="Camera" class="compare__feature-icon">
+          <p class="compare__feature-text compare__feature-content--narrow" style="--padding-percent: 10%;">Hỗ trợ bàn
+            phím Bluetooth</p>
+
+        </article>
+
+      </div>
 
     </div>
 
   </section>
 
   <!-- End Compare-section -->
-  
+
   <!-- QA -->
   <section class="over_qa">
 
@@ -832,11 +895,6 @@
       </div>
   </footer>
   <!-- End Footer -->
-  <script>
-    document.addEventListener("DOMContentLoaf", () => {
-      const menuMoblieBtn = document.querySelector("")
-    })
-  </script>
 </body>
 
 </html>
