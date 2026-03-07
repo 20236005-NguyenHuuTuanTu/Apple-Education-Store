@@ -58,18 +58,18 @@
 }
 .compare__badge {
   display: block;
-  font-size: 12px; /* Theo ảnh 8 */
-  color: #B64400;  /* Màu cam đậm của Apple */
+  font-size: 12px; 
+  color: #B64400;  
   font-weight: 600;
-  height: 16px;    /* Để giữ layout ổn định khi không có nhãn */
+  height: 16px;  
   margin-bottom: 8px;
 }
 .compare__name {
-  font-size: 24px; /* .t-label trong ảnh 10 */
+  font-size: 24px; 
   line-height: 1.166;
   font-weight: 600;
   letter-spacing: .009em;
-  min-height: 60px; /* Giúp tên máy dài/ngắn không làm lệch dòng dưới */
+  min-height: 60px; 
 }
 
 .compare__product-link {
@@ -77,49 +77,47 @@
   text-decoration: none;
 }
 
-/* Mô tả phụ (Ảnh 1, 4) */
 .compare__subtitle {
-  font-size: 17px; /* .t-body trong ảnh 4 */
+  font-size: 17px;
   line-height: 1.47;
   font-weight: 400;
   margin-top: 0.8em;
-  min-height: 75px; /* Chiều cao cố định theo ảnh 4 */
+  min-height: 75px; 
 }
 
-/* Phần giá tiền (Ảnh 1, 2) */
 .compare__price {
-  font-size: 14px; /* .t-body-reduced trong ảnh 2 */
+  font-size: 14px;
   margin-top: 26px;
   padding-bottom: 33px;
   margin-bottom: 49px;
-  border-bottom: 1px solid var(--border); /* Đường kẻ ngang cuối phần info */
+  border-bottom: 1px solid var(--border); 
   width: 100%;
 }
 
 .compare__feature {
     width: 100%;
-    margin-bottom: 50px; /* Khoảng cách giữa các mục lớn */
-    min-height: 100px;    /* Đảm bảo các hàng ngang bằng nhau */
+    margin-bottom: 50px; 
+    min-height: 100px;  
 }
 
 .compare__feature-headline {
-    font-size: 24px;      /* Chuẩn .t-label/display-size */
+    font-size: 24px;     
     font-weight: 600;
     line-height: 1.166;
     margin-bottom: 10px;
 }
 
 .compare__feature-text {
-    font-size: 14px;      /* Chuẩn .t-body-reduced */
-    line-height: 1.42859; /* Thông số chính xác từ ảnh 7bf622 */
+    font-size: 14px;     
+    line-height: 1.42859; 
     font-weight: 400;
-    margin-top: 5px;      /* Margin-top theo ảnh 6ed9a7 */
+    margin-top: 5px;     
     color: var(--text);
 }
 
 .compare__feature-icon {
     display: block;
-    margin: 44px auto 12px; /* Margin top 44px, bottom 12px từ ảnh 6ed928 */
+    margin: 44px auto 12px; 
     width: 56px;
     height: 56px;
     object-fit: contain;
