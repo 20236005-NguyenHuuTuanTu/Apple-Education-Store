@@ -1,47 +1,55 @@
-    .hero-banner{
-        padding-top: 50px;
-        width: 1200px;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-    }
+.hero-banner {
+    padding-top: 50px;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
 
-    .hero-banner .upper-banner{
-        display: flex;
-        justify-content: space-between;
-    }
+.hero-banner__header {
+    display: flex;
+    justify-content: space-between;
+}
 
-    .hero-banner .lower-banner ul{
-        display: flex;
-        list-style: none;
-        gap: 30px
-    }
+.hero-banner__title {
+    width: 600px;
+    color: #08827c;
+    font-size: 80px;
+    line-height: 1.1;
+}
 
-    .hero-banner .lower-banner img{
-        width: 100px;
-        height: 65px;
-    }
-    .hero-banner a {
-        display: flex;
-        flex-direction: column;
-    }
-    .hero-banner h1{
-        width: 600px;
-        color: #08827c;
-        font-size: 80px;
-        line-height: 1.1;
-    }
-    .hero-banner .right{
-        display: flex;
-        flex-direction: column;
-        width: 500px;
-        justify-content: center;
-        text-align: right;
-        align-items: flex-end;         
-        font-size: 20px;
-    }
+.hero-banner__content {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: center;
+    text-align: right;
+    align-items: flex-end;         
+    font-size: 20px;
+}
 
-    .hero-banner a {
-        text-decoration: none;
-    }
+.hero-banner__link {
+    text-decoration: none;
+}
+.product-nav__list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.product-nav__link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+}
+
+.product-nav__image {
+    width: 100px;
+    height: 65px;
+}
+
+.product-nav__text {
+    margin-top: 10px; 
+}
