@@ -284,3 +284,22 @@
     font-size: 11px;
     font-weight: bold;
 }
+
+@media screen and (max-width:832px) {
+    .ProductSection .inner-wrap {
+        display: block;
+        width: 100%;
+    }
+
+    .ProductSection .stickyImage{
+        width: 100%;
+        position: relative;
+        top: 0;
+    }
+
+    .ProductSection .productOptions{
+    width: 100%;
+    
+}
+
+}
