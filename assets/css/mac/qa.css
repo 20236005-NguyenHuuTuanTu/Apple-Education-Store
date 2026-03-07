@@ -1,32 +1,33 @@
 .over_qa{
-  background:#fff;
-  border-top:1px solid #d2d2d7;
-  padding:0;
+  background: #fff;
+  border-top: 1px solid #d2d2d7;
+  padding: 0;
 }
 
 .qa_inner{
-  max-width:980px;
-  margin:0 auto;
-  padding:40px 0;
+  width: 87.5%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 40px 0;
 }
 
 .qa_title{
-  font-size:40px;
-  font-weight:600;
-  margin-bottom:24px;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 24px;
 }
 
 .qa_list{
-  list-style:none;
-  margin:0;
-  padding:0;
-  border-top:1px solid #d2d2d7;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #d2d2d7;
 }
 
 .qa_item{
-  padding:20px 0;
-  border-bottom:1px solid #d2d2d7;
-  font-size:24px;
-  font-weight:600;
-  color:#1d1d1f;
+  padding: 20px 0;
+  border-bottom: 1px solid #d2d2d7;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1d1d1f;
 }
