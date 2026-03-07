@@ -72,3 +72,49 @@
     display: flex;
     justify-content: flex-end;
 }
+
+@media screen and (max-width: 832px) {
+    
+    .sticky-navigation {
+        width: 92%; 
+        margin-top: 50px; 
+        flex-direction: column;
+        align-items: flex-start; 
+        gap: 20px;
+    }
+
+
+    .sticky-navigation h1 {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    .sticky-navigation p {
+        font-size: 18px; 
+    }
+
+
+    .sticky-navigation .promotion,
+    .sticky-navigation .intell {
+        font-size: 16px; 
+    }
+
+
+    .sticky-navigation .button {
+        font-size: 16px;
+        padding: 12px 24px;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .sticky .up, 
+    .sticky .down {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+    .sticky .up {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
