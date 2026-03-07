@@ -12,3 +12,19 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    const menuBtn = document.querySelector(".menu-mobile-icon");
+    const mobileMenu = document.querySelector("#mobile-menu");
+    const closeBtn = document.querySelector("#close-menu");
+
+    menuBtn.addEventListener("click", function(){
+        mobileMenu.classList.add("open");
+    });
+
+    closeBtn.addEventListener("click", function(){
+        mobileMenu.classList.remove("open");
+    });
+
+});
