@@ -76,7 +76,7 @@
 
 @media screen and (max-width: 832px) {
     
-    .sticky-navigation {
+    .product-nav {
         width: 92%; 
         margin-top: 50px; 
         flex-direction: column;
@@ -85,23 +85,23 @@
     }
 
 
-    .sticky-navigation h1 {
+    .product-nav__title {
         font-size: 36px;
         line-height: 1.2;
     }
 
-    .sticky-navigation p {
+    .product-nav__price {
         font-size: 18px; 
     }
 
 
-    .sticky-navigation .promotion,
-    .sticky-navigation .intell {
+    .product-nav__promotion,
+   .product-nav__ai, .product-nav__ai-link  {
         font-size: 16px; 
     }
 
 
-    .sticky-navigation .button {
+    .product-nav__cta {
         font-size: 16px;
         padding: 12px 24px;
         width: 100%;
@@ -109,13 +109,8 @@
     }
 
 
-    .sticky .up, 
-    .sticky .down {
+    .shipping-banner__header,.shipping-banner__details {
         padding: 10px 20px;
         font-size: 18px;
-    }
-    .sticky .up {
-        flex-wrap: wrap;
-        gap: 10px;
     }
 }
