@@ -71,7 +71,7 @@
         align-items: start;
     }
 
-    .product-nav__link{
+    .product-nav__list{
         width: 100%;
         overflow-x: scroll;
         padding-bottom: 20px;
