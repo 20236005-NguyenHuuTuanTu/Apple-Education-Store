@@ -1,6 +1,7 @@
 .hero-banner {
     padding-top: 50px;
-    width: 1200px;
+    width: 90%;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -52,4 +53,27 @@
 
 .product-nav__text {
     margin-top: 10px; 
+}
+@media screen and (max-width:832px) {
+    .hero-banner__header{
+        display: block;
+    }
+
+    .hero-banner__title{
+        width: 100%;
+        font-size: 48px;
+        line-height: 1.1;
+    }
+
+    .hero-banner__content{
+        width: 100%;
+        text-align: left;
+        align-items: start;
+    }
+
+    .product-nav__link{
+        width: 100%;
+        overflow-x: scroll;
+        padding-bottom: 20px;
+    }
 }
