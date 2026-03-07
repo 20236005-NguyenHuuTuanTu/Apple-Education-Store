@@ -1,0 +1,135 @@
+.compare {
+  padding: 80px 0;
+  color: var(--text);
+}
+.compare__container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.compare__header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.compare__title {
+  font-size: 40px; 
+  font-weight: 600;
+  letter-spacing: -0.003em;
+}
+.compare__link {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--blue);
+  text-decoration: none;
+  font-size: 17px;
+}
+.compare__link:hover {
+  text-decoration: underline;
+}
+
+.compare__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 0 60px; 
+  align-items: start; 
+}
+.compare__card {
+  text-align: center;
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  grid-template-rows: subgrid;
+  text-align: center;
+  grid-row: span 40;
+}
+.compare__hero {
+  display: block;
+  width: 244.99px;     
+  height: 199px;
+  object-fit: contain;
+}
+.compare__swatch {
+  display: block;
+  margin: 0 auto;
+  width: 31px;     
+  height: auto;
+  padding: 25px 0 15px; 
+  box-sizing: content-box;
+}
+.compare__badge {
+  display: block;
+  font-size: 12px; 
+  color: #B64400;  
+  font-weight: 600;
+  height: 16px;  
+  margin-bottom: 8px;
+}
+.compare__name {
+  font-size: 24px; 
+  line-height: 1.166;
+  font-weight: 600;
+  letter-spacing: .009em;
+  min-height: 60px; 
+}
+
+.compare__product-link {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.compare__subtitle {
+  font-size: 17px;
+  line-height: 1.47;
+  font-weight: 400;
+  margin-top: 0.8em;
+  min-height: 75px; 
+}
+
+.compare__price {
+  font-size: 14px;
+  margin-top: 26px;
+  padding-bottom: 33px;
+  margin-bottom: 49px;
+  border-bottom: 1px solid var(--border); 
+  width: 100%;
+}
+
+.compare__feature {
+    width: 100%;
+    margin-bottom: 50px; 
+    min-height: 100px;  
+}
+
+.compare__feature-headline {
+    font-size: 24px;     
+    font-weight: 600;
+    line-height: 1.166;
+    margin-bottom: 10px;
+}
+
+.compare__feature-text {
+    font-size: 14px;     
+    line-height: 1.42859; 
+    font-weight: 400;
+    margin-top: 5px;     
+    color: var(--text);
+}
+
+.compare__feature-icon {
+    display: block;
+    margin: 44px auto 12px; 
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+}
+
+.compare__footnote {
+    font-size: 0.7em;
+    vertical-align: super;
+    margin-left: 2px;
+}
+
+.compare__feature-content--narrow {
+  padding-left: var(--padding-percent, 0%) !important;
+  padding-right: var(--padding-percent, 0%) !important;
+}
