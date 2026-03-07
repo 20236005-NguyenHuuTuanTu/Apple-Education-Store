@@ -96,4 +96,12 @@ document.addEventListener('DOMContentLoaded', function () {
             clearError(this.id);
         });
     });
+
+    const addOptionalEmailBtn = document.querySelector(".add-optional-email");
+            const optionalEmailInputContainer = document.querySelector(".payment-footer-top .input-container");
+
+            addOptionalEmailBtn.addEventListener("click", function () {
+                optionalEmailInputContainer.hidden = false;
+                addOptionalEmailBtn.style.display = "none";
+            });
 });
